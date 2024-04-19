@@ -21,9 +21,11 @@
   <title>Website Menu #1</title>
 </head>
 <style>
-  .nav-link, .nav-link a {
+  .nav-link,
+  .nav-link a {
     display: inline;
   }
+
   .site-navbar .site-navigation .site-menu>div>a {
     padding: 20px 20px;
     font-size: 13px;
@@ -32,19 +34,49 @@
     text-decoration: none !important;
     color: black;
   }
+
   p {
-      margin-top: auto;
-      margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
-  a{
+
+  a {
     color: black;
+  }
+
+  .nav-link {
+    font-weight: 600;
+    padding: 0.5rem 0.45rem;
+    color: #5e5b52;
+    font-size: 16px;
+  }
+  .nav-link:hover {
+    color: #51892D;
+  }
+  .btn_verde {
+    padding: 0.5rem 1rem;
+    background-color: #51892D;
+    color: white;
+  }
+  .btn_verde:focus,
+  .btn_verde.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+  }
+  .btn_verde:hover {
+    background-color: #74a157;
+    color: white;
+  }
+  .btn_naranja{
+    padding: 0.5rem 1rem;
+    background-color: #ea9b1c;
+    color: white;
   }
 </style>
 
 
 <body>
 
-  
+
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
       <div class="site-mobile-menu-close mt-3">
@@ -53,32 +85,34 @@
     </div>
     <div class="site-mobile-menu-body"></div>
   </div>
-  
+
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
     <div class="container-fluid" style="background: #51892D; height: 4.5vh; display: flex; align-items: center;">
       <div class="container">
-        <p style="text-align: center; color: #FCFCFC; font-size: 16px; font-family: Plus Jakarta Sans; font-weight: 500; word-wrap: break-word">Descuentos de hasta el 60% del 02 al 15 de Marzo</p>
+        <p style="text-align: center; color: #FCFCFC; font-size: 16px; font-weight: 500; word-wrap: break-word">
+          Descuentos de hasta el 60% del 02 al 15 de Marzo</p>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row align-items-center">
+    <div class="container py-3">
+      <div class="row" style="align-items: center;">
 
-        <div class="col-6 col-xl-4">
-          <div class="row">
-            <div class="col-3">
-              <h1 class="mb-0 site-logo"><a href="index.html">Brand<span class="text-primary">.</span> </a></h1>
+        <div class="col-6 col-xl-5">
+          <div class="row" style="align-items: center;">
+            <div class="col-5 pl-0">
+              <!-- <h1 class="mb-0 site-logo"><a href="index.html">Brand<span class="text-primary">.</span> </a></h1> -->
+              <img src="images/logo.png" class="img-fluid" alt="">
             </div>
-            <div class="col-9 d-none d-xl-block">
-              <a href="#home-section" class="nav-link">Home</a>
-              <a href="#home-section" class="nav-link">Home</a>
-              <a href="#home-section" class="nav-link">Home</a>
+            <div class="col-7 d-none d-xl-block px-0">
+              <a href="#home-section" class="nav-link">Nosotros</a>
+              <a href="#home-section" class="nav-link">Productos</a>
+              <a href="#home-section" class="nav-link">Contacto</a>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-md-8 d-none d-xl-block">
+        <div class="col-12 col-md-7 d-none d-xl-block">
           <nav class="site-navigation position-relative text-right" role="navigation">
 
             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
@@ -89,16 +123,19 @@
                 <li><a href="#about-section" class="nav-link">About Us</a></li>
                 <li><a href="#blog-section" class="nav-link">Blog</a></li>
 
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              <li><a href="#contact-section" class="nav-link">Contact2</a></li>
+                <li><a href="#contact-section" class="">Contact</a></li>
+                <li><a href="#contact-section" class="">Contact2</a></li>
 
               </div>
 
 
               <div class="d-none d-lg-block">
-              
-                <a href="#contact-section" class="nav-link">Contact</a>
-                <a href="#contact-section" class="nav-link">Contact2</a>
+
+
+                <button class="btn btn-succeful"><u>Iniciar sesión</u></button>
+
+                <button type="button" class="btn btn_verde">Regístrarse</button>
+
               </div>
             </ul>
           </nav>
@@ -109,9 +146,118 @@
             class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
 
       </div>
-    </div>
 
+    </div>
   </header>
+  <section style="height: 100vh; background-color: #fbf9f4; display: flex; align-items: center;">
+    <div class="container">
+      <div class="row" style="align-items: center;">
+        <div class="col-1"><button><img src="images/icons/FLECHA1.svg" alt=""></button></div>
+        <div class="col-6">
+          <p class="h4 py-3">¿QUIENES SOMOS?</p>
+          <h2 class="py-4">Soluciones que se adaptan a cualquier estilo de vida.</h2>
+          <h5 class="py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</h5>
+            <button type="button" class="btn btn_naranja">Regístrarse</button>
+        </div>
+        <div class="col-4">
+          <div style="border: solid 2px #92908a; padding: 15px; border-radius: 2%;">
+            <img class="img-fluid py-4" src="images/QuienesSomos.png" alt="">
+            <div class="p-4" style="background-color: antiquewhite;"><p>Registrate o inicia sesión para ver tus puntos y beneficios.</p></div>
+          </div>
+        </div>
+        <div class="col-1"><button><img src="images/icons/FLECHA1.svg" alt=""></button></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #5e5b52">
+    <div class="container py-2">
+      <div class="row">
+        <div class="col-4">
+          <div class="row" style="align-items: center;">
+            <div class="col-6"><img class="img-fluid" src="images/TARJETA DE LEALTAD.png" alt=""></div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-12 pl-0" style="border-bottom: solid 2px #92908a;">
+                  <h5 class="text-white py-1">Tarjeta de lealtad</h5>
+                </div>
+                <div class="col-12 pl-0">
+                  <h6 class="text-white py-3" style="color: #e7e3dc !important;">Regístrate y acumula puntos desde tu
+                    primera compra.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row" style="align-items: center;">
+            <div class="col-6"><img class="img-fluid" src="images/CUPONES.png" alt=""></div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-12 pl-0" style="border-bottom: solid 2px #92908a;">
+                  <h5 class="text-white py-1">Cupones y promociones</h5>
+                </div>
+                <div class="col-12 pl-0">
+                  <h6 class="text-white py-3" style="color: #e7e3dc !important;">Obtén recompensas asombrosas por ser
+                    nuestro cliente.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row" style="align-items: center;">
+            <div class="col-6"><img class="img-fluid" src="images/AGENDA.png" alt=""></div>
+            <div class="col-6">
+              <div class="row">
+                <div class="col-12 pl-0" style="border-bottom: solid 2px #92908a;">
+                  <h5 class="text-white py-1">Agenda electrónica</h5>
+                </div>
+                <div class="col-12 pl-0">
+                  <h6 class="text-white py-3" style="color: #e7e3dc !important;">Conoce nuestro horario, priorizamos tus
+                    citas y agendas.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #fbf9f4">
+    <div class="container py-5">
+      <div class="row py-5" style="align-items: center;">
+        <div class="col-5 pr-5"><img class="img-fluid" src="images/QuienesSomos.png" alt=""></div>
+        <div class="col-7">
+          <p class=" h4">¿QUIENES SOMOS?</p>
+          <h2 class="py-4">Soluciones que se adaptan a cualquier estilo de vida.</h2>
+          <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</h5>
+          <div class="row pt-4">
+            <div class="col-4">
+              <h2>110+</h2>
+              <h5>Eventos organizados</h5>
+            </div>
+            <div class="col-4" style="border-left: solid 2px #92908a; border-right: solid 2px #92908a;">
+              <h2>110+</h2>
+              <h5>Eventos organizados</h5>
+            </div>
+            <div class="col-4">
+              <h2>110+</h2>
+              <h5>Eventos organizados</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section style="height: 86vh; background-color: #fbf9f4">
+    </section> -->
+
+
 
   <!-- <div class="hero"></div> -->
 
