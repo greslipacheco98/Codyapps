@@ -82,6 +82,17 @@
   .text-frist{
     text-align: center; color: #FCFCFC; font-size: 16px; font-weight: 500; word-wrap: break-word;
   }
+  .cycles_text {
+
+  } 
+  .cycles_text::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #ea9b1c;
+    display: inline-block;
+    margin: 0 15px 9px 0;
+  }
 
   /* dispositivos movil */
   @media only screen and (max-width: 600px) {
@@ -96,7 +107,18 @@
       flex-direction: column-reverse;
     }
     .pantalla_movil{
-      margin-top: 13vh;
+      margin-top: 17vh;
+    }
+    .text-tarjeta div h5{
+      font-size: .9rem;
+      padding-right: 10px;
+    }
+    .text-tarjeta div h6{
+      font-size: .8rem;
+      padding-right: 10px;
+    }
+    .text-tarjeta{
+      margin-right: 2px;
     }
   }
 
@@ -178,19 +200,6 @@
 
     </div>
   </header>
-  <style>
-    .cycles_text {
-
-    } 
-    .cycles_text::before {
-    content: "";
-    width: 20px;
-    height: 2px;
-    background: #ea9b1c;
-    display: inline-block;
-    margin: 0 15px 9px 0;
-  }
-  </style>
 
   <section class="fondo_1">
     <div class="container pantalla_movil">
@@ -206,9 +215,9 @@
             dolore magna aliqua.</h6>
             <button type="button" class="btn btn_naranja">Regístrarse</button>
         </div>
-        <div class="col-lg-4 col-12">
+        <div class="col-lg-4 col-12 py-lg-0 py-4">
           <div style="border: solid 2px #b2c99e; padding: 15px; border-radius: 2%;">
-            <img class="img-fluid pb-4" src="images/SLIDE1.png" alt="">
+            <img class="img-fluid pb-2" src="images/SLIDE1.png" alt="">
             <div class="p-4" style="background-color: #f4f0dd;"><p class="text-center">Registrate o inicia sesión para ver tus puntos y beneficios.</p></div>
           </div>
         </div>
@@ -225,7 +234,7 @@
           <div class="row" style="align-items: center;">
             <div class="col-6"><img class="img-fluid" src="images/TARJETA DE LEALTAD.png" alt=""></div>
             <div class="col-6">
-              <div class="row">
+              <div class="row text-tarjeta">
                 <div class="col-12 pl-0" style="border-bottom: solid 2px #92908a;">
                   <h5 class="text-white py-1">Tarjeta de lealtad</h5>
                 </div>
@@ -241,7 +250,7 @@
           <div class="row" style="align-items: center;">
             <div class="col-6"><img class="img-fluid" src="images/CUPONES.png" alt=""></div>
             <div class="col-6">
-              <div class="row">
+              <div class="row text-tarjeta">
                 <div class="col-12 pl-0" style="border-bottom: solid 2px #92908a;">
                   <h5 class="text-white py-1">Cupones y promociones</h5>
                 </div>
@@ -257,7 +266,7 @@
           <div class="row" style="align-items: center;">
             <div class="col-6"><img class="img-fluid" src="images/AGENDA.png" alt=""></div>
             <div class="col-6">
-              <div class="row">
+              <div class="row text-tarjeta">
                 <div class="col-12 pl-0" style="border-bottom: solid 2px #92908a;">
                   <h5 class="text-white py-1">Agenda electrónica</h5>
                 </div>
@@ -274,26 +283,33 @@
   </section>
 
   <section style="background-color: #fbf9f4">
-    <div class="container py-5">
+    <div class="container py-lg-5 py-3">
       <div class="row py-5" style="align-items: center;">
-        <div class="col-lg-5 col-12 pr-5"><img class="img-fluid" src="images/QuienesSomos.png" alt=""></div>
-        <div class="col-lg-7 col-12 py-3">
-          <p class=" h4">¿QUIENES SOMOS?</p>
+        <div class="col-lg-5 col-12 pr-lg-5 text-center"><img class="img-fluid" width="95%" src="images/QuienesSomos.png" alt=""></div>
+        <div class="col-lg-7 col-12">
+
+          <div class="divider"></div>
+            <p class="h5 cycles_text" style="letter-spacing: 0.25em; font-weight: 600; color: #5e5b52;">¿QUIENES SOMOS?</p>
+
+          <h1 class="py-3 font_jakarta" style="color: #5e5b52; font-weight: 500; line-height: 1.2;"><span style="color: #ea9b1c;">Soluciones que se adaptan</span> a cualquier estilo de vida.</h1>
+          <h6 class="pb-3" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+    
+          <!-- <p class="h4">¿QUIENES SOMOS?</p>
           <h2 class="py-4">Soluciones que se adaptan a cualquier estilo de vida.</h2>
           <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</h5>
+            dolore magna aliqua.</h5> -->
           <div class="row pt-4">
             <div class="col-lg-4 col-12">
-              <h2>110+</h2>
-              <h5>Eventos organizados</h5>
+              <h2 style="color: #5e5b52;">110+</h2>
+              <h5 style="color: #92908a;">Eventos organizados</h5>
             </div>
-            <div class="col-lg-4 col-12 py-3" style="border-left: solid 2px #92908a; border-right: solid 2px #92908a;">
-              <h2>110+</h2>
-              <h5>Eventos organizados</h5>
+            <div class="col-lg-4 col-12" style="border-left: solid 1px #92908a; border-right: solid 1px #92908a;">
+              <h2 style="color: #5e5b52;">829+</h2>
+              <h5 style="color: #92908a;">Clientes satisfechos</h5>
             </div>
             <div class="col-lg-4 col-12">
-              <h2>110+</h2>
-              <h5>Eventos organizados</h5>
+              <h2 style="color: #5e5b52;">4.8 ★</h2>
+              <h5 style="color: #92908a;">Valoración media</h5>
             </div>
           </div>
         </div>
