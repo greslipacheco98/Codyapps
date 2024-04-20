@@ -47,7 +47,7 @@
   .nav-link {
     font-weight: 600;
     padding: 0.5rem 0.45rem;
-    color: #5e5b52;
+    color: #5E5B52;
     font-size: 16px;
   }
   .nav-link:hover {
@@ -71,6 +71,32 @@
     background-color: #ea9b1c;
     color: white;
   }
+  .btn:focus, .btn.focus {
+      box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 0%);
+  }
+  .fondo_1{
+    background-image: url(images/frame-127.svg);
+    background-size: cover;
+    height: 100vh; background-color: #fbf9f4; display: flex; align-items: center;
+  }
+  .text-frist{
+    text-align: center; color: #FCFCFC; font-size: 16px; font-weight: 500; word-wrap: break-word;
+  }
+
+  /* dispositivos movil */
+  @media only screen and (max-width: 600px) {
+    .fondo_1{
+    height: auto; 
+    }
+    .text-frist{
+      font-size: 11px;
+    }
+    .site-navbar{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
 </style>
 
 
@@ -90,21 +116,21 @@
 
     <div class="container-fluid" style="background: #51892D; height: 4.5vh; display: flex; align-items: center;">
       <div class="container">
-        <p style="text-align: center; color: #FCFCFC; font-size: 16px; font-weight: 500; word-wrap: break-word">
+        <p class="text-frist">
           Descuentos de hasta el 60% del 02 al 15 de Marzo</p>
       </div>
     </div>
 
-    <div class="container py-3">
+    <div class="container py-lg-3">
       <div class="row" style="align-items: center;">
 
         <div class="col-6 col-xl-5">
           <div class="row" style="align-items: center;">
-            <div class="col-5 pl-0">
+            <div class="col-lg-5 col-12 pl-lg-0">
               <!-- <h1 class="mb-0 site-logo"><a href="index.html">Brand<span class="text-primary">.</span> </a></h1> -->
               <img src="images/logo.png" class="img-fluid" alt="">
             </div>
-            <div class="col-7 d-none d-xl-block px-0">
+            <div class="col-lg-7 d-none d-xl-block px-0">
               <a href="#home-section" class="nav-link">Nosotros</a>
               <a href="#home-section" class="nav-link">Productos</a>
               <a href="#home-section" class="nav-link">Contacto</a>
@@ -132,7 +158,7 @@
               <div class="d-none d-lg-block">
 
 
-                <button class="btn btn-succeful"><u>Iniciar sesión</u></button>
+                <button class="btn btn-succeful" style="text-decoration: underline;">Iniciar sesión</button>
 
                 <button type="button" class="btn btn_verde">Regístrarse</button>
 
@@ -143,30 +169,31 @@
 
 
         <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#"
-            class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+            class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3" style="color: #51892D;"></span></a></div>
 
       </div>
 
     </div>
   </header>
-  <section style="height: 100vh; background-color: #fbf9f4; display: flex; align-items: center;">
-    <div class="container">
+
+  <section class="fondo_1">
+    <div class="container" style="padding-top: 15vh;">
       <div class="row" style="align-items: center;">
-        <div class="col-1"><button><img src="images/icons/FLECHA1.svg" alt=""></button></div>
-        <div class="col-6">
-          <p class="h4 py-3">¿QUIENES SOMOS?</p>
-          <h2 class="py-4">Soluciones que se adaptan a cualquier estilo de vida.</h2>
-          <h5 class="py-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        <div class="col-1 d-none d-lg-block"><button class="btn" style="transform: rotate(180deg);"><img src="images/icons/FLECHA1.svg" alt=""></button></div>
+        <div class="col-lg-6 col-12 px-lg-5 pr-5">
+          <p class="h4 py-3">BIENVENIDO</p>
+          <h2 class="py-3">Planifica y optimiza tu hogar con nosotros.</h2>
+          <h5 class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.</h5>
             <button type="button" class="btn btn_naranja">Regístrarse</button>
         </div>
-        <div class="col-4">
-          <div style="border: solid 2px #92908a; padding: 15px; border-radius: 2%;">
-            <img class="img-fluid py-4" src="images/QuienesSomos.png" alt="">
-            <div class="p-4" style="background-color: antiquewhite;"><p>Registrate o inicia sesión para ver tus puntos y beneficios.</p></div>
+        <div class="col-lg-4 col-12">
+          <div style="border: solid 2px #b2c99e; padding: 15px; border-radius: 2%;">
+            <img class="img-fluid pb-4" src="images/SLIDE1.png" alt="">
+            <div class="p-4" style="background-color: antiquewhite;"><p class="text-center">Registrate o inicia sesión para ver tus puntos y beneficios.</p></div>
           </div>
         </div>
-        <div class="col-1"><button><img src="images/icons/FLECHA1.svg" alt=""></button></div>
+        <div class="col-1 d-none d-lg-block"><button class="btn"><img src="images/icons/FLECHA1.svg" alt=""></button></div>
       </div>
     </div>
   </section>
@@ -174,7 +201,7 @@
   <section style="background-color: #5e5b52">
     <div class="container py-2">
       <div class="row">
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <div class="row" style="align-items: center;">
             <div class="col-6"><img class="img-fluid" src="images/TARJETA DE LEALTAD.png" alt=""></div>
             <div class="col-6">
@@ -190,7 +217,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <div class="row" style="align-items: center;">
             <div class="col-6"><img class="img-fluid" src="images/CUPONES.png" alt=""></div>
             <div class="col-6">
@@ -206,7 +233,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <div class="row" style="align-items: center;">
             <div class="col-6"><img class="img-fluid" src="images/AGENDA.png" alt=""></div>
             <div class="col-6">
@@ -229,22 +256,22 @@
   <section style="background-color: #fbf9f4">
     <div class="container py-5">
       <div class="row py-5" style="align-items: center;">
-        <div class="col-5 pr-5"><img class="img-fluid" src="images/QuienesSomos.png" alt=""></div>
-        <div class="col-7">
+        <div class="col-lg-5 col-12 pr-5"><img class="img-fluid" src="images/QuienesSomos.png" alt=""></div>
+        <div class="col-lg-7 col-12 py-3">
           <p class=" h4">¿QUIENES SOMOS?</p>
           <h2 class="py-4">Soluciones que se adaptan a cualquier estilo de vida.</h2>
           <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua.</h5>
           <div class="row pt-4">
-            <div class="col-4">
+            <div class="col-lg-4 col-12">
               <h2>110+</h2>
               <h5>Eventos organizados</h5>
             </div>
-            <div class="col-4" style="border-left: solid 2px #92908a; border-right: solid 2px #92908a;">
+            <div class="col-lg-4 col-12 py-3" style="border-left: solid 2px #92908a; border-right: solid 2px #92908a;">
               <h2>110+</h2>
               <h5>Eventos organizados</h5>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-12">
               <h2>110+</h2>
               <h5>Eventos organizados</h5>
             </div>
