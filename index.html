@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -125,7 +126,7 @@
 </style>
 
 
-<body>
+<body style="background-color: #fbf9f4;">
 
 
   <div class="site-mobile-menu site-navbar-target">
@@ -282,7 +283,7 @@
     </div>
   </section>
 
-  <section style="background-color: #fbf9f4">
+  <section>
     <div class="container py-lg-5 py-3">
       <div class="row py-5" style="align-items: center;">
         <div class="col-lg-5 col-12 pr-lg-5 text-center"><img class="img-fluid" width="95%" src="images/QuienesSomos.png" alt=""></div>
@@ -316,9 +317,85 @@
       </div>
     </div>
   </section>
+  
+  <style>
+    .hr_1 {
+      width: 50%; /* Ancho del guion medio */
+      border: none;
+      border-top: 2px solid #333; /* Color y grosor del guion medio */
+      margin: 20px auto; /* Margen para centrarlo verticalmente */
+    }
+    .box{
+      margin: 100px auto;
+      width: 300px;
+      height: 50px;
+    }
+    .container-1{
+      width: 300px;
+      vertical-align: middle;
+      white-space: nowrap;
+      position: relative;
+    }
+    .container-1 input#search{
+      width: 300px;
+      height: 50px;
+      background: #ffffff;
+      border: none;
+      font-size: 10pt;
+      float: left;
+      color: #ffffff;
+      padding-left: 45px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+    .container-1 input#search::-webkit-input-placeholder {
+      color: #65737e;
+    }
+    .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+      color: #65737e;  
+    }
+    .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+      color: #65737e;  
+    }
+    .container-1 input#search:-ms-input-placeholder {  
+      color: #65737e;  
+    }
+    .container-1 .icon{
+      position: absolute;
+      top: 50%;
+      margin-left: 17px;
+      margin-top: 13px;
+      z-index: 1;
+      color: 
+      #4f5b66;
+    }
+    /* .container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+      outline:none;
+      background: #ffffff;
+    } */
+  </style>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
 
-  <!-- <section style="height: 86vh; background-color: #fbf9f4">
-    </section> -->
+          <hr class="hr_1">
+          <h1 class="text-center py-3 font_jakarta" style="color: #5e5b52; font-weight: 500; line-height: 1.2;">Nuestros productos</h1>
+          <h5 class="text-center pb-3" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor</h5>
+
+          <div class="box">
+            <div class="container-1">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="search" id="search" placeholder="Search..." />
+            </div>
+          </div>
+
+        </div>  
+      </div>
+    </div>
+
+  </section>
 
 
 
