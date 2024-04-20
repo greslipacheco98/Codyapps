@@ -448,7 +448,7 @@
       background: #ffffff;
     } */
   </style>
-  <section>
+  <section class="pb-5">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -603,9 +603,13 @@
             @media only screen and (max-width: 600px) {
               .pagination_text{
                 margin-right: 0px;
+                /* display: none; */
               }
               .pagination_text2{
                 margin-left: 0px;
+              }
+              .display_none{
+                display: none;
               }
 
             }
@@ -614,7 +618,7 @@
           <div class="row pt-5" style="justify-content: center">
             <!-- pagination elements -->
             <div class="pagination_section">
-              <a href="#" class="pagination_text">< <span class="d-none d-lg-block">Anterior</span></a>
+              <a href="#" class="pagination_text">< <span class="display_none">Anterior</span></a>
               <a href="#" title="" class="active">1</a>
               <a href="#" title="">2</a>
               <a href="#" title="">3</a>
@@ -622,7 +626,7 @@
               <a href="#" title="">5</a>
               <a href="#" title="">...</a>
               <a href="#" title="">12</a>
-              <a href="#" class="pagination_text2"><span class="d-none d-lg-block">Siguiente</span> ></a>
+              <a href="#" class="pagination_text2"><span class="display_none">Siguiente</span> ></a>
             </div>
           </div>
         </div>
@@ -631,7 +635,7 @@
 
   </section>
 
-  <section>
+  <section >
     
   </section>
 
