@@ -95,6 +95,9 @@
       display: flex;
       flex-direction: column-reverse;
     }
+    .pantalla_movil{
+      margin-top: 13vh;
+    }
   }
 
 </style>
@@ -158,7 +161,7 @@
               <div class="d-none d-lg-block">
 
 
-                <button class="btn btn-succeful" style="text-decoration: underline;">Iniciar sesión</button>
+                <button class="btn btn-succeful" style="text-decoration: underline; color: #5e5b52;">Iniciar sesión</button>
 
                 <button type="button" class="btn btn_verde">Regístrarse</button>
 
@@ -175,28 +178,45 @@
 
     </div>
   </header>
+  <style>
+    .cycles_text {
+
+    } 
+    .cycles_text::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #ea9b1c;
+    display: inline-block;
+    margin: 0 15px 9px 0;
+  }
+  </style>
 
   <section class="fondo_1">
-    <div class="container" style="padding-top: 15vh;">
+    <div class="container pantalla_movil">
       <div class="row" style="align-items: center;">
         <div class="col-1 d-none d-lg-block"><button class="btn" style="transform: rotate(180deg);"><img src="images/icons/FLECHA1.svg" alt=""></button></div>
         <div class="col-lg-6 col-12 px-lg-5 pr-5">
-          <p class="h4 py-3">BIENVENIDO</p>
-          <h2 class="py-3">Planifica y optimiza tu hogar con nosotros.</h2>
-          <h5 class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</h5>
+          
+            <div class="divider"></div>
+            <p class="h4 cycles_text" style="letter-spacing: 0.25em; font-weight: 600; color: #5e5b52;">BIENVENIDO</p>
+
+          <h1 class="py-3 font_jakarta" style="color: #5e5b52; font-weight: 450; line-height: 1.2;">Planifica y optimiza <span style="color: #ea9b1c;">tu hogar</span> con nosotros.</h1>
+          <h6 class="pb-3" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</h6>
             <button type="button" class="btn btn_naranja">Regístrarse</button>
         </div>
         <div class="col-lg-4 col-12">
           <div style="border: solid 2px #b2c99e; padding: 15px; border-radius: 2%;">
             <img class="img-fluid pb-4" src="images/SLIDE1.png" alt="">
-            <div class="p-4" style="background-color: antiquewhite;"><p class="text-center">Registrate o inicia sesión para ver tus puntos y beneficios.</p></div>
+            <div class="p-4" style="background-color: #f4f0dd;"><p class="text-center">Registrate o inicia sesión para ver tus puntos y beneficios.</p></div>
           </div>
         </div>
         <div class="col-1 d-none d-lg-block"><button class="btn"><img src="images/icons/FLECHA1.svg" alt=""></button></div>
       </div>
     </div>
   </section>
+
 
   <section style="background-color: #5e5b52">
     <div class="container py-2">
