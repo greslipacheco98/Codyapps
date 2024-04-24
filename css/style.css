@@ -230,9 +230,10 @@ a:hover {
   position: fixed;
   right: 0;
   z-index: 2000;
-  padding-top: 20px;
+  padding-top: 0px;
   background: #fff;
-  height: calc(90%);
+  /* height: calc(90%); */
+  height: calc(60vh - 52px);
   -webkit-transform: translateY(-110%);
   -ms-transform: translateY(-110%);
   transform: translateY(-110%);
@@ -296,8 +297,8 @@ a:hover {
   /* overflow-y: scroll; */
   /* -webkit-overflow-scrolling: touch; */
   position: relative;
-  padding: 0 20px 20px 20px;
-  height: calc(100vh - 52px);
+  padding: 0 20px 0px 20px;
+  height: calc(50vh - 100px);
   padding-bottom: 150px;
 }
 
