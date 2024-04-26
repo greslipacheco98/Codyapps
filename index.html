@@ -23,6 +23,7 @@
 
   <title>Website Menu #1</title>
 </head>
+
 <body style="background-color: #fbf9f4;">
 
 
@@ -82,7 +83,7 @@
 
                 <button class="btn btn-succeful m-3" style="text-decoration: underline; color: #5e5b52;">Iniciar
                   sesión</button>
-                  <br>
+                <br>
                 <button type="button" class="btn btn_verde m-3">Regístrarse</button>
 
               </div>
@@ -91,7 +92,8 @@
               <div class="d-none d-lg-block">
 
 
-                <button class="btn btn-succeful" data-toggle="modal" data-target="#myModalnav" style="text-decoration: underline; color: #5e5b52;">Iniciar
+                <button class="btn btn-succeful" data-toggle="modal" data-target="#myModalnav"
+                  style="text-decoration: underline; color: #5e5b52;">Iniciar
                   sesión</button>
 
                 <button type="button" class="btn btn_verde">Regístrarse</button>
@@ -110,53 +112,58 @@
 
     </div>
 
-    
+
 
   </header>
 
   <!-- modal navbar-->
-  
+
   <style>
     .modal-header .close {
-    margin: -1rem -1rem;
-    color: #51892D;
+      margin: -1rem -1rem;
+      color: #51892D;
 
     }
-    .modal-header{
+
+    .modal-header {
       border-bottom: 0px solid #dee2e6;
     }
-    .close{
+
+    .close {
       :focus-visible {
-          outline: -webkit-focus-ring-color auto 0px;
+        outline: -webkit-focus-ring-color auto 0px;
       }
-      
+
     }
-    .close:focus{
-        outline: 0px auto -webkit-focus-ring-color;
+
+    .close:focus {
+      outline: 0px auto -webkit-focus-ring-color;
     }
+
     .modal-content {
       border-bottom: 8px solid #51892d;
     }
+
     @media (min-width: 576px) {
-    .modal-dialog {
+      .modal-dialog {
         max-width: 400px;
         margin: 1.75rem auto;
-        }
+      }
     }
-    
   </style>
 
-  <!-- The Modal  -->
+  <!-- The Modal inicio de seccion  -->
   <div class="modal fade" id="myModalnav">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-      
+
         <!-- Modal Header -->
         <div class="modal-header" style="justify-content: flex-start;">
           <!-- <h4 class="modal-title">Modal Heading</h4> -->
-          <button type="button" class="close" data-dismiss="modal"><span class="h6"><i class="fa-solid fa-angle-left"></i> Atras</span></button>
+          <button type="button" class="close" data-dismiss="modal"><span class="h6"><i
+                class="fa-solid fa-angle-left"></i> Atras</span></button>
         </div>
-        
+
         <!-- Modal body -->
         <div class="modal-body">
           <div class="row" style="justify-content:center;">
@@ -164,23 +171,17 @@
               <img src="images/logo.png" class="img-fluid p-2" alt="">
             </div>
           </div>
-          <form class="p-4 d-none">
-  
+          <form class="p-4">
             <h5 class="text-center">Iniciar Seción</h5>
-            
-            <div class="form-row">
-              <div class="form-group col-12">
-                <label for="" class="text-left" style="color: #5E5B52;">Nombre*</label>
-                <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
-              </div>
+            <div class="form-group col-12">
+              <label for="" class="text-left" style="color: #5E5B52;">Nombre*</label>
+              <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
             </div>
-            <div class="form-row">
-              <div class="form-group col-md-12 ">
-                <label for=""  style="color: #5E5B52;">Asunto*</label>
-                <input type="text" class="form-control" id="" placeholder="Escribe un asunto">
-              </div>
+            <div class="form-group col-md-12 ">
+              <label for="" style="color: #5E5B52;">Asunto*</label>
+              <input type="text" class="form-control" id="" placeholder="Escribe un asunto">
             </div>
-            <div class="form-group">
+            <div class="form-group col-md-12 ">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
                 <label class="form-check-label" for="gridCheck" style="color: #5E5B52;">
@@ -189,87 +190,119 @@
               </div>
             </div>
             <div class="row" style="justify-content:center;">
-              <button type="submit" class="btn px-5 my-2" style="background-color: #EA9B1C; color: white;">Inicia sesión</button>
+              <button type="submit" class="btn px-5 my-2" style="background-color: #EA9B1C; color: white;">Inicia
+                sesión</button>
               <div class="col-12 text-center">
-                <a style="font-size: 13px; color: #51892D;" href="">He olvidado mi contraseña</a> <br>
-                <a style="font-size: 13px;" href="">¿No tienes cuenta? <span style="color: #51892D;">Regístrate</span></a>
+                <a style="font-size: 13px; color: #51892D;">He olvidado mi contraseña</a> <br>
+                <a style="font-size: 13px;">¿No tienes cuenta? <span style="color: #51892D;">Regístrate</span></a>
               </div>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- modal para olvide la contraseña -->
+  <div class="modal fade" id="myModalnav2">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header" style="justify-content: flex-start;">
+          <!-- <h4 class="modal-title">Modal Heading</h4> -->
+          <button type="button" class="close" data-dismiss="modal"><span class="h6"><i
+                class="fa-solid fa-angle-left"></i> Atras</span></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row" style="justify-content:center;">
+            <div class="col-7 text-center">
+              <img src="images/logo.png" class="img-fluid p-2" alt="">
+            </div>
+          </div>
+          <!--formularios  -->
           <form class="p-4 d-none">
-  
+
             <h5 class="text-center">Iniciar Seción</h5>
 
-            <p>Introduce el email con el que te registraste previamente. Enviaremos un enlace al correo para que puedas recuperar tu cuenta.</p>
-                        
+            <p>Introduce el email con el que te registraste previamente. Enviaremos un enlace al correo para que puedas
+              recuperar tu cuenta.</p>
+
             <div class="form-row">
               <div class="form-group col-12">
                 <label for="" class="text-left" style="color: #5E5B52;">Nombre*</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
               </div>
             </div>
-            
-            
+
+
             <div class="row" style="justify-content:center;">
-              <button type="submit" class="btn px-5 my-2" style="background-color: #EA9B1C; color: white;">Inicia sesión</button>
+              <button type="submit" class="btn px-5 my-2" style="background-color: #EA9B1C; color: white;">Inicia
+                sesión</button>
               <div class="col-12 text-center">
                 <a style="font-size: 13px; color: #51892D;" href="">He olvidado mi contraseña</a> <br>
-                <a style="font-size: 13px;" href="">¿No tienes cuenta? <span style="color: #51892D;">Regístrate</span></a>
+                <a style="font-size: 13px;" href="">¿No tienes cuenta? <span
+                    style="color: #51892D;">Regístrate</span></a>
               </div>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- modal para crear perfil -->
+  <div class="modal fade" id="myModalnav3">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header" style="justify-content: flex-start;">
+          <!-- <h4 class="modal-title">Modal Heading</h4> -->
+          <button type="button" class="close" data-dismiss="modal"><span class="h6"><i
+                class="fa-solid fa-angle-left"></i> Atras</span></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row" style="justify-content:center;">
+            <div class="col-7 text-center">
+              <img src="images/logo.png" class="img-fluid p-2" alt="">
+            </div>
+          </div>
           <form class="p-4">
-  
+
             <h5 class="text-center">Iniciar Seción</h5>
             <!-- FORMULARIO LARGO -->
             <!-- <div class="modal-dialog modal-dialog-scrollable"> -->
-                <div class="form-group col-12">
-                  <label for="" class="text-left" style="color: #5E5B52;">Nombre*</label>
-                  <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
-                </div>
-                <div class="form-group col-md-12 ">
-                  <label for=""  style="color: #5E5B52;">Asunto*</label>
-                  <input type="text" class="form-control" id="" placeholder="Escribe un asunto">
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="gridCheck" style="color: #5E5B52;">
-                    Check me out
-                  </label>
-                </div>
-              
+              <div class="form-group col-12">
+                <label for="" class="text-left" style="color: #5E5B52;">Nombre*</label>
+                <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
+              </div>
+              <div class="form-group col-md-12 ">
+                <label for="" style="color: #5E5B52;">Asunto*</label>
+                <input type="text" class="form-control" id="" placeholder="Escribe un asunto">
+              </div>
+        
               <div class="row" style="justify-content:center;">
-                <button type="submit" class="btn px-5 my-2" style="background-color: #EA9B1C; color: white;">Inicia sesión</button>
+                <button type="submit" class="btn px-5 my-2" style="background-color: #EA9B1C; color: white;">Inicia
+                  sesión</button>
                 <div class="col-12 text-center">
                   <a style="font-size: 13px; color: #51892D;" href="">He olvidado mi contraseña</a> <br>
                   <a style="font-size: 13px;" href="">¿No tienes cuenta? <span style="color: #51892D;">Regístrate</span></a>
                 </div>
               </div>
             <!-- </div> -->
-            
-            
+        
           </form>
-          
-          <!-- <div class="row pb-3">
-            <div class="col-12 text-center">
-              <a style="font-size: 13px; color: #51892D;" href="">He olvidado mi contraseña</a> <br>
-              <a style="font-size: 13px;" href="">¿No tienes cuenta? <span style="color: #51892D;">Regístrate</span></a>
-            </div>
-          </div> -->
-          
         </div>
-        
-        <!-- Modal footer -->
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div> -->
-        
       </div>
     </div>
   </div>
 
+  
 
   <section class="fondo_1">
     <div class="container pantalla_movil">
@@ -358,6 +391,7 @@
     </div>
   </section>
 
+
   <section>
     <div class="container py-lg-5 pt-3">
       <div class="row pt-5" style="align-items: center;">
@@ -419,81 +453,102 @@
             </div>
           </div>
           <div class="row text-center">
-              <style>
-                .zoom{
-                  transition: transform .6s;
-                  background-color: #e9e7e3; 
-                  border-radius: 3% 3% 0% 0%;                
-                }
-                .zoom:hover{
-                  transform: scale(1.2);
-                  background-color: #ffffff00; 
-                }
-              </style>
+            <style>
+              .zoom {
+                transition: transform .6s;
+                background-color: #e9e7e3;
+                border-radius: 3% 3% 0% 0%;
+              }
 
-              <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-                <div style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <button class="btn p-0" style="overflow: hidden;" data-toggle="modal" data-target="#myModal"><img class="img-fluid zoom" src="images/SHOP3.png" alt=""></button>
-                </div>
-                <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
-                <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
-                <h6 style="color: #51892d;">$299.99</h6>
-              </div>
+              .zoom:hover {
+                transform: scale(1.2);
+                background-color: #ffffff00;
+              }
+            </style>
 
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;" src="images/SHOP2.png" alt="">
-                <div style="font-weight: 500; color: white; position: absolute; top: 0; width: 50px; height: 25px; border-radius: 15% 0% 15% 0%; background-color: #e3777e; display: flex; justify-content: center; align-items: center;">-50%</div>
+              <div
+                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
+                <button class="btn p-0" style="overflow: hidden;" data-toggle="modal" data-target="#myModal"><img
+                    class="img-fluid zoom" src="images/SHOP3.png" alt=""></button>
+              </div>
+              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
+              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+              <h6 style="color: #51892d;">$299.99</h6>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
+              <div
+                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
+                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
+                  src="images/SHOP2.png" alt="">
+                <div
+                  style="font-weight: 500; color: white; position: absolute; top: 0; width: 50px; height: 25px; border-radius: 15% 0% 15% 0%; background-color: #e3777e; display: flex; justify-content: center; align-items: center;">
+                  -50%</div>
               </div>
               <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
               <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
               <h6 style="color: #51892d;"><span class="span2">1000.00</span> $299.99</h6>
             </div>
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;" src="images/SHOP1.png" alt="">
+              <div
+                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
+                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
+                  src="images/SHOP1.png" alt="">
               </div>
               <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
               <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
               <h6 style="color: #51892d;">$299.99</h6>
             </div>
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;" src="images/SHOP8.png" alt="">
+              <div
+                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
+                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
+                  src="images/SHOP8.png" alt="">
               </div>
               <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
               <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
               <h6 style="color: #51892d;">$299.99</h6>
             </div>
-            
+
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;" src="images/SHOP9.png" alt="">
-              </div>
-              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
-              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
-              <h6 style="color: #51892d;">$299.99</h6>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;" src="images/SHOP10.png" alt="">
+              <div
+                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
+                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
+                  src="images/SHOP9.png" alt="">
               </div>
               <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
               <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
               <h6 style="color: #51892d;">$299.99</h6>
             </div>
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;" src="images/SHOP11.png" alt="">
-                <div style="font-weight: 500; color: white; position: absolute; top: 0; width: 50px; height: 25px; border-radius: 15% 0% 15% 0%; background-color: #e3777e; display: flex; justify-content: center; align-items: center;">-50%</div>
+              <div
+                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
+                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
+                  src="images/SHOP10.png" alt="">
+              </div>
+              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
+              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+              <h6 style="color: #51892d;">$299.99</h6>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
+              <div
+                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
+                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
+                  src="images/SHOP11.png" alt="">
+                <div
+                  style="font-weight: 500; color: white; position: absolute; top: 0; width: 50px; height: 25px; border-radius: 15% 0% 15% 0%; background-color: #e3777e; display: flex; justify-content: center; align-items: center;">
+                  -50%</div>
               </div>
               <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
               <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
               <h6 style="color: #51892d;"><span class="span2">1000.00</span> $299.99</h6>
             </div>
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;" src="images/SHOP12.png" alt="">
+              <div
+                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
+                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
+                  src="images/SHOP12.png" alt="">
               </div>
               <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
               <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
@@ -505,7 +560,9 @@
           <div class="row pt-5" style="justify-content: center">
             <!-- pagination elements -->
             <div class="pagination_section">
-              <a href="#" class="pagination_text"> < <span class="display_none">Anterior</span></a>
+              <a href="#" class="pagination_text">
+                < <span class="display_none">Anterior</span>
+              </a>
               <a href="#" title="" class="active">1</a>
               <a href="#" title="">2</a>
               <a href="#" title="">3</a>
@@ -521,42 +578,46 @@
     </div>
 
     <!-- modal -->
-  
+
     <style>
       .modal-header .close {
-      margin: -1rem -1rem;
-      color: #51892D;
+        margin: -1rem -1rem;
+        color: #51892D;
 
       }
-      .modal-header{
+
+      .modal-header {
         border-bottom: 0px solid #dee2e6;
       }
-      .close{
+
+      .close {
         :focus-visible {
-            outline: -webkit-focus-ring-color auto 0px;
+          outline: -webkit-focus-ring-color auto 0px;
         }
-        
+
       }
-      .close:focus{
-          outline: 0px auto -webkit-focus-ring-color;
+
+      .close:focus {
+        outline: 0px auto -webkit-focus-ring-color;
       }
     </style>
-  
+
     <!-- The Modal -->
     <div class="modal fade" id="myModal">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-        
+
           <!-- Modal Header -->
           <div class="modal-header" style="justify-content: flex-start;">
             <!-- <h4 class="modal-title">Modal Heading</h4> -->
-            <button type="button" class="close" data-dismiss="modal"><span class="h6"><i class="fa-solid fa-angle-left"></i> Atras</span></button>
+            <button type="button" class="close" data-dismiss="modal"><span class="h6"><i
+                  class="fa-solid fa-angle-left"></i> Atras</span></button>
           </div>
-          
+
           <!-- Modal body -->
           <div class="modal-body">
             <div id="demo" class="carousel slide" data-ride="carousel">
-           
+
               <!-- The slideshow -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -574,7 +635,7 @@
                   </div>
                 </div>
               </div>
-            
+
               <!-- Left and right controls -->
               <a class="carousel-control-prev" style="filter: brightness(0.5);" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -582,16 +643,16 @@
               <a class="carousel-control-next" style="filter: brightness(0.5);" href="#demo" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
               </a>
-            
+
             </div>
-            
+
           </div>
-          
+
           <!-- Modal footer -->
           <!-- <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div> -->
-          
+
         </div>
       </div>
     </div>
@@ -602,39 +663,42 @@
     <div class="container mb-5">
       <div class="row pt-5">
         <div class="col-lg-6 col-12 px-3 py-3 py-lg-1">
-         
-            <p class="h6 cycles_text" style="letter-spacing: 0.25em; font-weight: 600; color: #5e5b52;">CONTACTANOS</p>
-            <h1 class="py-3 font_jakarta" style="color: #5e5b52; font-weight: 500; line-height: 1.2;">Comienza ahora</h1>
-            <form>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="" style="color: #5E5B52;">Nombre*</label>
-                  <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for=""  style="color: #5E5B52;">Email*</label>
-                  <input type="email" class="form-control" id="" placeholder="Escribe tu email">
-                </div>
+
+          <p class="h6 cycles_text" style="letter-spacing: 0.25em; font-weight: 600; color: #5e5b52;">CONTACTANOS</p>
+          <h1 class="py-3 font_jakarta" style="color: #5e5b52; font-weight: 500; line-height: 1.2;">Comienza ahora</h1>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="" style="color: #5E5B52;">Nombre*</label>
+                <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
               </div>
-              <div class="form-row">
-                <div class="form-group col-md-12 ">
-                  <label for=""  style="color: #5E5B52;">Asunto*</label>
-                  <input type="text" class="form-control" id="" placeholder="Escribe un asunto">
-                </div>
+              <div class="form-group col-md-6">
+                <label for="" style="color: #5E5B52;">Email*</label>
+                <input type="email" class="form-control" id="" placeholder="Escribe tu email">
               </div>
-              <div class="form-group">
-                <label for="inputAddress"  style="color: #5E5B52;">Address</label>
-                <textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Escribe un mensaje"></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12 ">
+                <label for="" style="color: #5E5B52;">Asunto*</label>
+                <input type="text" class="form-control" id="" placeholder="Escribe un asunto">
               </div>
-              <button type="submit" class="btn px-5" style="background-color: #EA9B1C; color: white;">Enviar mensaje</button>
-            </form>
-          
+            </div>
+            <div class="form-group">
+              <label for="inputAddress" style="color: #5E5B52;">Address</label>
+              <textarea name="" class="form-control" id="" cols="30" rows="7"
+                placeholder="Escribe un mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn px-5" style="background-color: #EA9B1C; color: white;">Enviar
+              mensaje</button>
+          </form>
+
         </div>
         <div class="col-lg-6 col-12 px-3 py-3 py-lg-1">
-          <div class="row p-lg-0 p-3" >
+          <div class="row p-lg-0 p-3">
             <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-              <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
-                  var setting = {"query":"Centro, Mérida, Yuc., México","width":800,"height":500,"satellite":false,"zoom":13,"placeId":"ChIJqd62rGNxVo8RXv03M4j9Ejc","cid":"0x3712fd883337fd5e","coords":[20.9681469,-89.62987240000001],"cityUrl":"/bolivia/centro-297493","cityAnchorText":"Mapa de Centro, Departamento de Santa Cruz, Bolivia","lang":"es","queryString":"Centro, Mérida, Yuc., México","centerCoord":[20.9681469,-89.62987240000001],"id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"1099910"};
+              <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+              <script>(function () {
+                  var setting = { "query": "Centro, Mérida, Yuc., México", "width": 800, "height": 500, "satellite": false, "zoom": 13, "placeId": "ChIJqd62rGNxVo8RXv03M4j9Ejc", "cid": "0x3712fd883337fd5e", "coords": [20.9681469, -89.62987240000001], "cityUrl": "/bolivia/centro-297493", "cityAnchorText": "Mapa de Centro, Departamento de Santa Cruz, Bolivia", "lang": "es", "queryString": "Centro, Mérida, Yuc., México", "centerCoord": [20.9681469, -89.62987240000001], "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "1099910" };
                   var d = document;
                   var s = d.createElement('script');
                   s.src = 'https://1map.com/js/script-for-user.js?embed_id=1099910';
@@ -644,25 +708,33 @@
                   };
                   var to = d.getElementsByTagName('script')[0];
                   to.parentNode.insertBefore(s, to);
-                })();</script><a href="https://1map.com/es/map-embed">1 Map</a></div>
+                })();</script><a href="https://1map.com/es/map-embed">1 Map</a>
+            </div>
           </div>
-          <div class="row py-3" style="justify-content: center">            
-            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i class="fa-brands fa-facebook-f" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i class="fa-brands fa-whatsapp" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i class="fa-brands fa-instagram" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i class="fa-brands fa-twitter" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i class="fa-brands fa-youtube" style="color: #F4F0DD;"></i></button>
+          <div class="row py-3" style="justify-content: center">
+            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i
+                class="fa-brands fa-facebook-f" style="color: #F4F0DD;"></i></button>
+            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i
+                class="fa-brands fa-whatsapp" style="color: #F4F0DD;"></i></button>
+            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i
+                class="fa-brands fa-instagram" style="color: #F4F0DD;"></i></button>
+            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i
+                class="fa-brands fa-twitter" style="color: #F4F0DD;"></i></button>
+            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i
+                class="fa-brands fa-youtube" style="color: #F4F0DD;"></i></button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container" >
-      <div class="row py-3 mx-1 text-footer" style="font-size: .8rem; color: #ADADAD; align-items: center; border-top: solid 2px #a79e9e45; ">
+    <div class="container">
+      <div class="row py-3 mx-1 text-footer"
+        style="font-size: .8rem; color: #ADADAD; align-items: center; border-top: solid 2px #a79e9e45; ">
         <div class="col-lg-4 col-12 px-0">2024 © Copyright Cody Apps. <br class="d-none d-lg-block">
           Todos los derechos reservados.</div>
         <div class="col-lg-4 col-12">Desarollado por <span style="color: #51892D;">CodyExpert</span></div>
-        <div class="col-lg-4 col-12 px-0" style="color: #51892D;">Términos y condiciones <span style="color: #4f5b66;">|</span> Aviso de privacidad</div>
+        <div class="col-lg-4 col-12 px-0" style="color: #51892D;">Términos y condiciones <span
+            style="color: #4f5b66;">|</span> Aviso de privacidad</div>
       </div>
     </div>
   </footer>
