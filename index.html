@@ -26,29 +26,29 @@
   <title>Website Menu #1</title>
 </head>
 
-<body style="background-color: #fbf9f4;">
+<body>
 
-
-  <div class="site-mobile-menu site-navbar-target" style="background-color: #fbf9f4;">
-    <div class="site-mobile-menu-header pb-3" style="border-bottom: solid 1px #5e5b5241;">
+  <div class="site-mobile-menu site-navbar-target" id="mobil-menu">
+    <div class="site-mobile-menu-header pb-3">
       <div class="site-mobile-menu-close mt-3">
-        <div class="row" style="align-items: center;">
+        <div class="row">
           <div class="col-7 px-1">
             <img src="images/logo.png" class="img-fluid p-2" width="82%" alt="">
           </div>
-          <div class="col-5 px-2" style="text-align: right;">
-            <span class="icon-menu js-menu-toggle" style="color: #51892D;"></span>
+          <div class="col-5 px-2">
+            <span class="icon-menu js-menu-toggle" ></span>
           </div>
         </div>
         <!-- <span class="icon-close2 js-menu-toggle"></span> -->
       </div>
     </div>
-    <div class="site-mobile-menu-body" style="display: inline-block !important;"></div>
+    <div class="site-mobile-menu-body"></div>
   </div>
 
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
-    <div class="container-fluid" style="background: #51892D; height: 4.5vh; display: flex; align-items: center;">
+    <!-- en desarrollo -->
+    <div class="container-fluid">
       <div class="container">
         <p class="text-frist">
           Descuentos de hasta el 60% del 02 al 15 de Marzo</p>
@@ -91,20 +91,16 @@
                 <li><a href="#about-section" class="nav-link py-3">About Us</a></li>
                 <li><a href="#blog-section" class="nav-link py-3">Blog</a></li>
 
-                <button class="btn btn-succeful m-3" style="text-decoration: underline; color: #5e5b52;">Iniciar
+                <button class="btn btn-succeful m-3" id="botton-inicio">Iniciar
                   sesión</button>
                 <br>
                 <button type="button" class="btn btn_verde m-3">Regístrarse</button>
 
               </div>
 
-
               <div class="d-none d-lg-block">
 
-
-                <button class="btn btn-succeful" data-toggle="modal" data-target="#myModalnav"
-                  style="text-decoration: underline; color: #5e5b52;">Iniciar
-                  sesión</button>
+                <button class="btn btn-succeful" id="botton-inicio" data-toggle="modal" data-target="#myModalnav">Iniciar sesión</button>
 
                 <button type="button" class="btn btn_verde">Regístrarse</button>
 
@@ -113,56 +109,15 @@
           </nav>
         </div>
 
-
-        <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#"
-            class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"
-              style="color: #51892D;"></span></a></div>
+        <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;">
+          <a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+        </div>
 
       </div>
 
     </div>
 
-
-
   </header>
-
-  <!-- modal navbar-->
-
-  <style>
-    .modal-header .close {
-      margin: -1rem -1rem;
-      color: #51892D;
-
-    }
-
-    .modal-header {
-      border-bottom: 0px solid #dee2e6;
-    }
-
-    .close {
-      :focus-visible {
-        outline: -webkit-focus-ring-color auto 0px;
-      }
-
-    }
-
-    .close:focus {
-      outline: 0px auto -webkit-focus-ring-color;
-    }
-
-    .modal-content {
-     border-bottom: 8px solid #51892d;
-     height: 550px;
-    }
-    
-
-    @media (min-width: 576px) {
-      .modal-dialog {
-        max-width: 400px;
-        margin: 1.75rem auto;
-      }
-    }
-  </style>
 
   <!-- The Modal inicio de seccion  -->
   <div class="modal fade" id="myModalnav">
@@ -187,27 +142,27 @@
 
           <form class="p-4"  id="Formulario2">
             <div class="form-group col-12">
-              <label for="" class="text-left" style="color: #5E5B52;">Nombre*</label>
+              <label for="" class="text-left color_gris">Nombre*</label>
               <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
             </div>
             <div class="form-group col-md-12 ">
-              <label for="" style="color: #5E5B52;">Asunto*</label>
+              <label for="" class="color_gris">Asunto*</label>
               <input type="text" class="form-control" id="" placeholder="Escribe un asunto">
             </div>
             <div class="form-group col-md-12 ">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck" style="color: #5E5B52;">
+                <label class="form-check-label color_gris" for="gridCheck">
                   Check me out
                 </label>
               </div>
             </div>
             <div class="row" style="justify-content:center;">
-              <button type="submit" class="btn px-5 my-2" style="background-color: #EA9B1C; color: white;">Inicia
+              <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia
                 sesión</button>
               <div class="col-12 text-center">
-                <a href="#" onclick="abrirModal()" style="font-size: 13px; color: #51892D;">He olvidado mi contraseña</a> <br>
-                <a href="#" onclick="abrirModal1()" style="font-size: 13px;">¿No tienes cuenta? <span style="color: #51892D;">Regístrate</span></a>
+                <a href="#" onclick="abrirModal()" class="color_verde">He olvidado mi contraseña</a> <br>
+                <a href="#" onclick="abrirModal1()">¿No tienes cuenta? <span class="color_verde">Regístrate</span></a>
               </div>
             </div>
           </form>
@@ -217,7 +172,7 @@
   </div>
 
   <!-- modal para olvide la contraseña -->
-  <div class="modal" id="myModalnav2"> 
+  <div class="modal" id="myModalnav2" style="padding-right: 15px;"> 
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -245,27 +200,20 @@
 
             <div class="form-row">
               <div class="form-group col-12">
-                <label for="" class="text-left" style="color: #5E5B52;">Nombre*</label>
+                <label for="" class="text-left color_gris">Nombre*</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
               </div>
             </div>
 
 
             <div class="row" style="justify-content:center;">
-              <button type="submit" class="btn px-5 my-2" style="background-color: #EA9B1C; color: white;">Recuperar contraseña</button>
+              <button type="submit" class="btn px-5 my-2 botton_naranja">Recuperar contraseña</button>
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-
-  <style>
-    .form-wrapper {
-        max-height: 300px; /* Altura máxima del contenedor */
-        overflow-y: auto; /* Hace que el contenedor sea desplazable verticalmente si el contenido excede la altura máxima */
-    }
-  </style>
 
   <!-- modal para crear perfil -->
   <div class="modal" id="myModalnav3">
@@ -292,32 +240,32 @@
             <!-- FORMULARIO LARGO -->
             <!-- <div class="modal-dialog modal-dialog-scrollable"> -->
               <div class="form-group col-12">
-                <label for="" class="text-left" style="color: #5E5B52;">Nombre*</label>
+                <label for="" class="text-left ">Nombre*</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
               </div>
               <div class="form-group col-md-12 ">
-                <label for="" style="color: #5E5B52;">email</label>
+                <label for="" class="color_gris">email</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe un email">
               </div>
               <div class="form-group col-md-12 ">
-                <label for="" style="color: #5E5B52;">contraseña</label>
+                <label for="" class="color_gris">contraseña</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe un email">
               </div>
               <div class="form-group col-md-12 ">
-                <label for="" style="color: #5E5B52;">fecha de nacimiento</label>
+                <label for="" class="color_gris">fecha de nacimiento</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe un email">
               </div>
               <div class="form-group col-md-12 ">
-                <label for="" style="color: #5E5B52;">genero</label>
+                <label for="" class="color_gris">genero</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe un email">
               </div>
               <div class="form-group col-md-12 ">
-                <label for="" style="color: #5E5B52;">telefono</label>
+                <label for="" class="color_gris">telefono</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe un email">
               </div>
         
               <div class="row" style="justify-content:center;">
-                <button type="submit" class="btn px-5 my-2" style="background-color: #EA9B1C; color: white;">Inicia
+                <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia
                   sesión</button>
               </div>
             <!-- </div> -->
@@ -333,25 +281,27 @@
   <section class="fondo_1">
     <div class="container pantalla_movil">
       <div class="row" style="align-items: center;">
-        <div class="col-1 d-none d-lg-block"><button class="btn" style="transform: rotate(180deg);"><img
-              src="images/icons/FLECHA1.svg" alt=""></button></div>
+        <div class="col-1 d-none d-lg-block">
+          <button class="btn" style="transform: rotate(180deg);"><img
+              src="images/icons/FLECHA1.svg" alt=""></button>
+        </div>
         <div class="col-lg-6 col-12 px-lg-5 pr-5">
 
           <div class="divider"></div>
-          <p class="h4 cycles_text" style="letter-spacing: 0.25em; font-weight: 600; color: #5e5b52;">BIENVENIDO</p>
+          <p class="h4 cycles_text">BIENVENIDO</p>
 
-          <h1 class="py-3 font_jakarta" style="color: #5e5b52; font-weight: 450; line-height: 1.2;">Planifica y optimiza
-            <span style="color: #ea9b1c;">tu hogar</span> con nosotros.
+          <h1 class="py-3 font_jakarta titulo_productos">Planifica y optimiza
+            <span>tu hogar</span> con nosotros.
           </h1>
-          <h6 class="pb-3" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          <h6 class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
             dolore magna aliqua.</h6>
           <button type="button" class="btn btn_naranja">Regístrarse</button>
         </div>
         <div class="col-lg-4 col-12 py-lg-0 py-4">
-          <div style="border: solid 2px #b2c99e; padding: 15px; border-radius: 2%;">
+          <div class="borde_inicio">
             <img class="img-fluid pb-2" src="images/SLIDE1.png" alt="">
-            <div class="p-4" style="background-color: #f4f0dd;">
+            <div class="p-4">
               <p class="text-center">Registrate o inicia sesión para ver tus puntos y beneficios.</p>
             </div>
           </div>
@@ -370,11 +320,11 @@
             <div class="col-6"><img class="img-fluid" src="images/TARJETA DE LEALTAD.png" alt=""></div>
             <div class="col-6">
               <div class="row text-tarjeta">
-                <div class="col-12 pl-0" style="border-bottom: solid 2px #92908a;">
+                <div class="col-12 pl-0 borde_boton">
                   <h5 class="text-white py-1">Tarjeta de lealtad</h5>
                 </div>
                 <div class="col-12 pl-0">
-                  <h6 class="text-white py-3" style="color: #e7e3dc !important;">Regístrate y acumula puntos desde tu
+                  <h6 class="text-white py-3">Regístrate y acumula puntos desde tu
                     primera compra.</h6>
                 </div>
               </div>
@@ -386,11 +336,11 @@
             <div class="col-6"><img class="img-fluid" src="images/CUPONES.png" alt=""></div>
             <div class="col-6">
               <div class="row text-tarjeta">
-                <div class="col-12 pl-0" style="border-bottom: solid 2px #92908a;">
+                <div class="col-12 pl-0 borde_boton">
                   <h5 class="text-white py-1">Cupones y promociones</h5>
                 </div>
                 <div class="col-12 pl-0">
-                  <h6 class="text-white py-3" style="color: #e7e3dc !important;">Obtén recompensas asombrosas por ser
+                  <h6 class="text-white py-3">Obtén recompensas asombrosas por ser
                     nuestro cliente.</h6>
                 </div>
               </div>
@@ -402,11 +352,11 @@
             <div class="col-6"><img class="img-fluid" src="images/AGENDA.png" alt=""></div>
             <div class="col-6">
               <div class="row text-tarjeta">
-                <div class="col-12 pl-0" style="border-bottom: solid 2px #92908a;">
+                <div class="col-12 pl-0 borde_boton">
                   <h5 class="text-white py-1">Agenda electrónica</h5>
                 </div>
                 <div class="col-12 pl-0">
-                  <h6 class="text-white py-3" style="color: #e7e3dc !important;">Conoce nuestro horario, priorizamos tus
+                  <h6 class="text-white py-3">Conoce nuestro horario, priorizamos tus
                     citas y agendas.</h6>
                 </div>
               </div>
@@ -426,28 +376,30 @@
         <div class="col-lg-7 col-12 pt-5 py-lg-5">
 
           <div class="divider"></div>
-          <p class="h5 cycles_text" style="letter-spacing: 0.25em; font-weight: 600; color: #5e5b52;">¿QUIENES SOMOS?
+          <p class="h5 cycles_text">¿QUIENES SOMOS?
           </p>
 
-          <h1 class="py-3 font_jakarta" style="color: #5e5b52; font-weight: 500; line-height: 1.2;"><span
-              style="color: #ea9b1c;">Soluciones que se adaptan</span> a cualquier estilo de vida.</h1>
+          <h1 class="py-3 font_jakarta titulo_productos">
+            <span>Soluciones que se adaptan</span> a cualquier estilo de vida.
+          </h1>
           <h6 class="pb-3" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
 
-          <div class="row py-4">
+          <div class="row py-4 quienes_somos">
             <div class="col-lg-4 col-12 py-1">
-              <h2 style="color: #5e5b52;">110+</h2>
-              <h5 style="color: #92908a;">Eventos organizados</h5>
+              <h2>110+</h2>
+              <h5>Eventos organizados</h5>
             </div>
             <div class="col-lg-4 col-12 borde_puntuacion py-1">
-              <h2 style="color: #5e5b52;">829+</h2>
-              <h5 style="color: #92908a;">Clientes satisfechos</h5>
+              <h2>829+</h2>
+              <h5>Clientes satisfechos</h5>
             </div>
             <div class="col-lg-4 col-12 py-1">
-              <h2 style="color: #5e5b52;">4.8 ★</h2>
-              <h5 style="color: #92908a;">Valoración media</h5>
+              <h2>4.8 ★</h2>
+              <h5>Valoración media</h5>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -459,7 +411,7 @@
         <div class="col-12">
 
           <hr class="hr_1">
-          <h1 class="text-center py-3 font_jakarta" style="color: #5e5b52; font-weight: 500; line-height: 1.2;">Nuestros
+          <h1 class="text-center py-3 font_jakarta titulo_productos">Nuestros
             productos</h1>
           <h5 class="text-center" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit,
             sed do eiusmod tempor</h5>
@@ -479,106 +431,88 @@
             </div>
           </div>
           <div class="row text-center">
-            <style>
-              .zoom {
-                transition: transform .6s;
-                background-color: #e9e7e3;
-                border-radius: 3% 3% 0% 0%;
-              }
 
-              .zoom:hover {
-                transform: scale(1.2);
-                background-color: #ffffff00;
-              }
-            </style>
-
-            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div
-                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <button class="btn p-0" style="overflow: hidden;" data-toggle="modal" data-target="#myModal"><img
+            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
+              <div class="contenedor">
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
                     class="img-fluid zoom" src="images/SHOP3.png" alt=""></button>
               </div>
-              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
-              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
-              <h6 style="color: #51892d;">$299.99</h6>
+              <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
+              <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+              <h6 class="precio">$299.99</h6>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div
-                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
-                  src="images/SHOP2.png" alt="">
-                <div
-                  style="font-weight: 500; color: white; position: absolute; top: 0; width: 50px; height: 25px; border-radius: 15% 0% 15% 0%; background-color: #e3777e; display: flex; justify-content: center; align-items: center;">
-                  -50%</div>
+            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
+              <div class="contenedor">
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal">
+                  <img class="img-fluid zoom" src="images/SHOP2.png" alt="">
+                  <div style="font-weight: 500; color: white; position: absolute; top: 0; width: 50px; height: 25px; border-radius: 15% 0% 15% 0%; background-color: #e3777e; display: flex; justify-content: center; align-items: center;">
+                    -50%</div>
+                </button>
               </div>
-              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
-              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
-              <h6 style="color: #51892d;"><span class="span2">1000.00</span> $299.99</h6>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div
-                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
-                  src="images/SHOP1.png" alt="">
-              </div>
-              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
-              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
-              <h6 style="color: #51892d;">$299.99</h6>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div
-                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
-                  src="images/SHOP8.png" alt="">
-              </div>
-              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
-              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
-              <h6 style="color: #51892d;">$299.99</h6>
+              <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
+              <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+              <h6 class="precio"><span class="span2">1000.00</span> $299.99</h6>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div
-                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
-                  src="images/SHOP9.png" alt="">
+            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
+              <div class="contenedor">
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
+                    class="img-fluid zoom" src="images/SHOP1.png" alt=""></button>
               </div>
-              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
-              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
-              <h6 style="color: #51892d;">$299.99</h6>
+              <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
+              <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+              <h6 class="precio">$299.99</h6>
             </div>
-            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div
-                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
-                  src="images/SHOP10.png" alt="">
+
+            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
+              <div class="contenedor">
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
+                    class="img-fluid zoom" src="images/SHOP8.png" alt=""></button>
               </div>
-              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
-              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
-              <h6 style="color: #51892d;">$299.99</h6>
+              <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
+              <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+              <h6 class="precio">$299.99</h6>
             </div>
-            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div
-                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
-                  src="images/SHOP11.png" alt="">
-                <div
-                  style="font-weight: 500; color: white; position: absolute; top: 0; width: 50px; height: 25px; border-radius: 15% 0% 15% 0%; background-color: #e3777e; display: flex; justify-content: center; align-items: center;">
-                  -50%</div>
+
+            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
+              <div class="contenedor">
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
+                    class="img-fluid zoom" src="images/SHOP9.png" alt=""></button>
               </div>
-              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
-              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
-              <h6 style="color: #51892d;"><span class="span2">1000.00</span> $299.99</h6>
+              <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
+              <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+              <h6 class="precio">$299.99</h6>
             </div>
-            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5">
-              <div
-                style="padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;">
-                <img class="img-fluid" style="background-color: #e9e7e3; border-radius: 3% 3% 0% 0%;"
-                  src="images/SHOP12.png" alt="">
+
+            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
+              <div class="contenedor">
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
+                    class="img-fluid zoom" src="images/SHOP10.png" alt=""></button>
               </div>
-              <h6 class="pt-3" style="color:#656464">Nombre del producto(ALIAS)</h6>
-              <p class="py-1" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur adipisc</p>
-              <h6 style="color: #51892d;">$299.99</h6>
+              <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
+              <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+              <h6 class="precio">$299.99</h6>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
+              <div class="contenedor">
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
+                    class="img-fluid zoom" src="images/SHOP11.png" alt=""></button>
+              </div>
+              <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
+              <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+              <h6 class="precio">$299.99</h6>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
+              <div class="contenedor">
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
+                    class="img-fluid zoom" src="images/SHOP12.png" alt=""></button>
+              </div>
+              <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
+              <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
+              <h6 class="precio">$299.99</h6>
             </div>
 
           </div>
@@ -602,31 +536,6 @@
         </div>
       </div>
     </div>
-
-    <!-- modal -->
-
-    <style>
-      .modal-header .close {
-        margin: -1rem -1rem;
-        color: #51892D;
-
-      }
-
-      .modal-header {
-        border-bottom: 0px solid #dee2e6;
-      }
-
-      .close {
-        :focus-visible {
-          outline: -webkit-focus-ring-color auto 0px;
-        }
-
-      }
-
-      .close:focus {
-        outline: 0px auto -webkit-focus-ring-color;
-      }
-    </style>
 
     <!-- The Modal -->
     <div class="modal fade" id="myModal">
@@ -690,31 +599,31 @@
       <div class="row pt-5">
         <div class="col-lg-6 col-12 px-3 py-3 py-lg-1">
 
-          <p class="h6 cycles_text" style="letter-spacing: 0.25em; font-weight: 600; color: #5e5b52;">CONTACTANOS</p>
-          <h1 class="py-3 font_jakarta" style="color: #5e5b52; font-weight: 500; line-height: 1.2;">Comienza ahora</h1>
-          <form>
+          <p class="h6 cycles_text">CONTACTANOS</p>
+          <h1 class="py-3 font_jakarta titulo_productos">Comienza ahora</h1>
+          <form class="formulario2">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="" style="color: #5E5B52;">Nombre*</label>
+                <label for="">Nombre*</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
               </div>
               <div class="form-group col-md-6">
-                <label for="" style="color: #5E5B52;">Email*</label>
+                <label for="">Email*</label>
                 <input type="email" class="form-control" id="" placeholder="Escribe tu email">
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-12 ">
-                <label for="" style="color: #5E5B52;">Asunto*</label>
+                <label for="">Asunto*</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe un asunto">
               </div>
             </div>
             <div class="form-group">
-              <label for="inputAddress" style="color: #5E5B52;">Address</label>
+              <label for="inputAddress">Address</label>
               <textarea name="" class="form-control" id="" cols="30" rows="7"
                 placeholder="Escribe un mensaje"></textarea>
             </div>
-            <button type="submit" class="btn px-5" style="background-color: #EA9B1C; color: white;">Enviar
+            <button type="submit" class="btn px-5 botton_naranja">Enviar
               mensaje</button>
           </form>
 
@@ -737,16 +646,16 @@
                 })();</script><a href="https://1map.com/es/map-embed">1 Map</a>
             </div>
           </div>
-          <div class="row py-3" style="justify-content: center">
-            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i
+          <div class="row py-3 redes_inco" style="justify-content: center">
+            <button type="submit" class="btn mx-lg-3 mx-1"><i
                 class="fa-brands fa-facebook-f" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i
+            <button type="submit" class="btn mx-lg-3 mx-1"><i
                 class="fa-brands fa-whatsapp" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i
+            <button type="submit" class="btn mx-lg-3 mx-1"><i
                 class="fa-brands fa-instagram" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i
+            <button type="submit" class="btn mx-lg-3 mx-1"><i
                 class="fa-brands fa-twitter" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1" style="background-color: #51892D; border-radius: 50%;"><i
+            <button type="submit" class="btn mx-lg-3 mx-1"><i
                 class="fa-brands fa-youtube" style="color: #F4F0DD;"></i></button>
           </div>
         </div>
@@ -754,13 +663,12 @@
     </div>
 
     <div class="container">
-      <div class="row py-3 mx-1 text-footer"
-        style="font-size: .8rem; color: #ADADAD; align-items: center; border-top: solid 2px #a79e9e45; ">
+      <div class="row py-3 mx-1 text-footer">
         <div class="col-lg-4 col-12 px-0">2024 © Copyright Cody Apps. <br class="d-none d-lg-block">
           Todos los derechos reservados.</div>
-        <div class="col-lg-4 col-12">Desarollado por <span style="color: #51892D;">CodyExpert</span></div>
-        <div class="col-lg-4 col-12 px-0" style="color: #51892D;">Términos y condiciones <span
-            style="color: #4f5b66;">|</span> Aviso de privacidad</div>
+        <div class="col-lg-4 col-12">Desarollado por <span class="color_verde">CodyExpert</span></div>
+        <div class="col-lg-4 col-12 px-0 color_verde">Términos y condiciones <span
+            style="color: #a7a5a0;">|</span> Aviso de privacidad</div>
       </div>
     </div>
   </footer>

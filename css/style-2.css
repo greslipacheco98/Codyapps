@@ -1,3 +1,55 @@
+body{
+  background-color: #fbf9f4;
+}
+
+#mobil-menu{
+  background-color: #fbf9f4;
+  .site-mobile-menu-body{
+    display: inline-block !important;
+  }
+  .site-mobile-menu-header{
+    .site-mobile-menu-close{
+      .row{
+        align-items: center;
+      }
+      .col-5{
+        text-align: right;
+      }
+    }
+  }
+  .site-mobile-menu-header{
+    border-bottom: solid 1px #5e5b5241;
+  }
+}
+
+.color_gris{
+  color: #5E5B52;
+}
+
+.color_verde{
+ color: #51892D;
+}
+
+.botton_naranja{
+  background-color: #EA9B1C; color: white;
+}
+
+#Formulario2 div div a{
+  font-size: 13px;
+}
+
+#botton-inicio{
+  text-decoration: underline; color: #5e5b52;
+}
+
+.icon-menu{
+  color: #51892D;
+}
+
+header .container-fluid{
+  background: #51892D; height: 4.5vh; display: flex; align-items: center;
+}
+
 .nav-link,
 .nav-link a {
   display: inline;
@@ -225,7 +277,165 @@ h1 {
   text-align: right;
 }
 
+/* modal */
+.form-wrapper {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.modal-header .close {
+  margin: -1rem -1rem;
+  color: #51892D;
+
+}
+
+.modal-header {
+  border-bottom: 0px solid #dee2e6;
+}
+
+.close {
+  :focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+
+}
+
+.close:focus {
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+.modal-content {
+ border-bottom: 8px solid #51892d;
+ height: 550px;
+}
+
+/* hover productos */
+.zoom {
+  transition: transform .6s;
+  background-color: #e9e7e3;
+  border-radius: 3% 3% 0% 0%;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+  background-color: #ffffff00;
+}
+
+/* focus  */
+.modal-header .close {
+  margin: -1rem -1rem;
+  color: #51892D;
+
+}
+
+.modal-header {
+  border-bottom: 0px solid #dee2e6;
+}
+
+.close {
+  :focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+
+}
+
+.close:focus {
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+.cycles_text{
+  letter-spacing: 0.25em; font-weight: 600; color: #5e5b52;
+}
+
+.titulo_productos{
+  color: #5e5b52; font-weight: 500; line-height: 1.2;
+}
+
+.fondo_1 div div div{ 
+  h1{
+    font-weight: 450;
+    span{
+      color: #ea9b1c;
+    }
+  }
+  h6{
+    color: #92908a;
+  }
+}
+.borde_inicio{
+  border: solid 2px #b2c99e; padding: 15px; border-radius: 2%;
+  div{
+    background-color: #f4f0dd;  
+  }
+}
+.borde_boton{
+  border-bottom: solid 2px #92908a;
+}
+.text-tarjeta h6{
+  color: #e7e3dc !important;
+}
+
+.titulo_productos{
+  span{
+    color: #ea9b1c;
+  }
+}
+
+.quienes_somos{
+  div{
+    h2{
+      color: #5e5b52;
+    }
+    h5{
+      color: #92908a;
+    }
+  }
+}
+
+.item-producto{
+  .contenedor{
+    padding-bottom: 15px; border-bottom: solid 3px #51892D; max-width: fit-content; margin: 0 auto;
+    button{
+      overflow: hidden;
+    }
+  }
+  h6{
+    color:#656464
+  }
+  p{
+    color: #92908a;
+  }
+  .precio{
+    color: #51892d;
+  }
+}
+
+.formulario2{
+  div div label{
+    color: #5E5B52;
+  }
+}
+
+.redes_inco button{
+  background-color: #51892D; border-radius: 50%;
+}
+
+.redes_inco button i{
+  color: #F4F0DD;
+}
+.text-footer{
+  font-size: .8rem; color: #ADADAD; align-items: center; border-top: solid 2px #a79e9e45;
+}
+
 /* dispositivos movil */
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+    margin: 1.75rem auto;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .fondo_1 {
     height: auto;
