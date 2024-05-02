@@ -123,8 +123,8 @@ a {
 .text-frist {
   text-align: center;
   color: #FCFCFC;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400; 
   word-wrap: break-word;
 }
 
