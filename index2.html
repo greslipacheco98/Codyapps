@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texto que aparece y desaparece con clic</title>
+  <style>
+    .texto {
+      position: relative;
+      /* Añadido */
+      transition: opacity 1s ease;
+      /* Modificado */
+
+    }
+
+    @keyframes slidein {
+      from {
+        opacity: 0;
+        top: -10px;
+      }
+
+      to {
+        opacity: 1;
+        top: 0px;
+
+      }
+    }
+
+    .fade-in {
+      animation-duration: 1s;
+      animation-name: slidein;
+    }
+
+    @keyframes slideon {
+      from {
+        opacity: 1;
+        bottom: 0px;
+      }
+
+      to {
+        opacity: 0;
+        bottom: -10px;
+      }
+    }
+
+    .fade-on {
+      animation-duration: 1s;
+      animation-name: slideon;
+    }
+  </style>
+</head>
+
+<body >
+
+  <div class="container-fluid" style="padding: 20px;" style="cursor: pointer;">
+    <div class="container">
+      <p class="texto fade-in" onclick="toggleText()">Descuentos de hasta el 60% del 02 al 15 de Marzo</p>
+      <p class="texto" style="display: none;" onclick="toggleText()">Descuentos de hasta el 60% del 02 al 15 de
+        Marzo2</p>
+      <p class="texto" style="display: none;" onclick="toggleText()">Descuentos de hasta el 60% del 02 al 15 de
+        Marzo3</p>
+    </div>
+  </div>
+
+  <script>
+    // var index = 0;
+    // var textElements = document.querySelectorAll('.texto');
+
+    // function toggleText() {
+    //   setTimeout(function () {
+    //     textElements[index].classList.add('fade-on');
+
+    //     setTimeout(function () {
+    //       textElements[index].style.display = 'none';
+
+    //       index = (index + 1) % textElements.length;
+    //       textElements[index].style.display = 'block';
+
+    //       textElements[index].classList.add('fade-in');
+
+    //       textElements[index].classList.remove('fade-on');
+    //     }, 500);
+    //   },);
+    // }
+
+    var index = 0;
+  var textElements = document.querySelectorAll('.texto');
+
+  function toggleText() {
+    textElements[index].classList.add('fade-on');
+
+    setTimeout(function () {
+      textElements[index].style.display = 'none';
+
+      index = (index + 1) % textElements.length;
+      textElements[index].style.display = 'block';
+
+      textElements[index].classList.add('fade-in');
+
+      textElements[index].classList.remove('fade-on');
+    }, 500);
+  }
+
+  // Llamar a toggleText() inicialmente
+  toggleText();
+
+  // Llamar a toggleText() cada 15 segundos
+  setInterval(toggleText, 10000);
+
+
+  </script>
+
+</body>
+
+</html>

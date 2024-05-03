@@ -112,7 +112,7 @@ a {
 }
 
 .fondo_1 {
-  background-image: url(images/frame-127.svg);
+  /* background-image: url(../images/frame-127.svg); */
   background-size: cover;
   height: 100vh;
   background-color: #fbf9f4;
@@ -298,6 +298,51 @@ h1 {
     outline: -webkit-focus-ring-color auto 0px;
   }
 
+}
+
+/* animaicon */
+
+.texto {
+  position: relative;
+  /* Añadido */
+  transition: opacity 1s ease;
+  /* Modificado */
+
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    top: -10px;
+  }
+
+  to {
+    opacity: 1;
+    top: 0px;
+
+  }
+}
+
+.fade-in {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slideon {
+  from {
+    opacity: 1;
+    bottom: 0px;
+  }
+
+  to {
+    opacity: 0;
+    bottom: -10px;
+  }
+}
+
+.fade-on {
+  animation-duration: 1s;
+  animation-name: slideon;
 }
 
 .close:focus {

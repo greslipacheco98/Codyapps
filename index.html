@@ -11,9 +11,9 @@
   <script src="https://kit.fontawesome.com/a5aa5ba830.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- jQuery y jQuery UI -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <!-- jQuery y jQuery UI -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -28,8 +28,9 @@
   <title>Website Menu #1</title>
 </head>
 <style>
-  
+
 </style>
+
 <body>
 
   <div class="site-mobile-menu site-navbar-target" id="mobil-menu">
@@ -40,7 +41,7 @@
             <img src="images/logo.png" class="img-fluid p-2" width="82%" alt="">
           </div>
           <div class="col-5 px-2">
-            <span class="icon-menu js-menu-toggle" ></span>
+            <span class="icon-menu js-menu-toggle"></span>
           </div>
         </div>
         <!-- <span class="icon-close2 js-menu-toggle"></span> -->
@@ -52,7 +53,7 @@
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
     <!-- en desarrollo -->
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
       <div class="container">
         <p class="text-frist">
           Descuentos de hasta el 60% del 02 al 15 de Marzo</p>
@@ -60,6 +61,18 @@
           Descuentos de hasta el 60% del 02 al 15 de Marzo2</p>
         <p class="text-frist" style="display: none;">
           Descuentos de hasta el 60% del 02 al 15 de Marzo3</p>
+      </div>
+    </div> -->
+
+    <div class="container-fluid" style="padding: 20px;" style="cursor: pointer;">
+      <div class="container">
+        <p class="text-frist texto fade-in" onclick="toggleText()">Descuentos de hasta el 60% del 02 al 15 de Marzo</p>
+        <p class="text-frist texto" style="display: none;" onclick="toggleText()">Descuentos de hasta el 60% del 02 al
+          15 de
+          Marzo2</p>
+        <p class="text-frist texto" style="display: none;" onclick="toggleText()">Descuentos de hasta el 60% del 02 al
+          15 de
+          Marzo3</p>
       </div>
     </div>
 
@@ -100,7 +113,8 @@
 
               <div class="d-none d-lg-block">
 
-                <button class="btn btn-succeful" id="botton-inicio" data-toggle="modal" data-target="#myModalnav">Iniciar sesión</button>
+                <button class="btn btn-succeful" id="botton-inicio" data-toggle="modal"
+                  data-target="#myModalnav">Iniciar sesión</button>
 
                 <button type="button" class="btn btn_verde">Regístrarse</button>
 
@@ -140,7 +154,7 @@
             </div>
           </div>
 
-          <form class="p-4"  id="Formulario2">
+          <form class="p-4" id="Formulario2">
             <div class="form-group col-12">
               <label for="" class="text-left color_gris">Nombre*</label>
               <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
@@ -172,7 +186,7 @@
   </div>
 
   <!-- modal para olvide la contraseña -->
-  <div class="modal" id="myModalnav2" style="padding-right: 15px;"> 
+  <div class="modal" id="myModalnav2" style="padding-right: 15px;">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
@@ -188,7 +202,7 @@
           <div class="row" style="justify-content:center;">
             <div class="col-7 text-center">
               <img src="images/logo.png" class="img-fluid p-2" alt="">
-               <h5 class="text-center">Iniciar Seción</h5>
+              <h5 class="text-center">Iniciar Seción</h5>
             </div>
           </div>
           <!--formularios  -->
@@ -239,49 +253,48 @@
 
             <!-- FORMULARIO LARGO -->
             <!-- <div class="modal-dialog modal-dialog-scrollable"> -->
-              <div class="form-group col-12">
-                <label for="" class="text-left ">Nombre*</label>
-                <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
-              </div>
-              <div class="form-group col-md-12 ">
-                <label for="" class="color_gris">email</label>
-                <input type="text" class="form-control" id="" placeholder="Escribe un email">
-              </div>
-              <div class="form-group col-md-12 ">
-                <label for="" class="color_gris">contraseña</label>
-                <input type="text" class="form-control" id="" placeholder="Escribe un email">
-              </div>
-              <div class="form-group col-md-12 ">
-                <label for="" class="color_gris">fecha de nacimiento</label>
-                <input type="text" class="form-control" id="" placeholder="Escribe un email">
-              </div>
-              <div class="form-group col-md-12 ">
-                <label for="" class="color_gris">genero</label>
-                <input type="text" class="form-control" id="" placeholder="Escribe un email">
-              </div>
-              <div class="form-group col-md-12 ">
-                <label for="" class="color_gris">telefono</label>
-                <input type="text" class="form-control" id="" placeholder="Escribe un email">
-              </div>
-        
-              <div class="row" style="justify-content:center;">
-                <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia
-                  sesión</button>
-              </div>
+            <div class="form-group col-12">
+              <label for="" class="text-left ">Nombre*</label>
+              <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
+            </div>
+            <div class="form-group col-md-12 ">
+              <label for="" class="color_gris">email</label>
+              <input type="text" class="form-control" id="" placeholder="Escribe un email">
+            </div>
+            <div class="form-group col-md-12 ">
+              <label for="" class="color_gris">contraseña</label>
+              <input type="text" class="form-control" id="" placeholder="Escribe un email">
+            </div>
+            <div class="form-group col-md-12 ">
+              <label for="" class="color_gris">fecha de nacimiento</label>
+              <input type="text" class="form-control" id="" placeholder="Escribe un email">
+            </div>
+            <div class="form-group col-md-12 ">
+              <label for="" class="color_gris">genero</label>
+              <input type="text" class="form-control" id="" placeholder="Escribe un email">
+            </div>
+            <div class="form-group col-md-12 ">
+              <label for="" class="color_gris">telefono</label>
+              <input type="text" class="form-control" id="" placeholder="Escribe un email">
+            </div>
+
+            <div class="row" style="justify-content:center;">
+              <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia
+                sesión</button>
+            </div>
             <!-- </div> -->
-        
+
           </form>
         </div>
       </div>
     </div>
   </div>
 
-  <section class="fondo_1">
+  <section class="fondo_1" style="background-image: url(images/frame-127.svg);">
     <div class="container pantalla_movil">
       <div class="row" style="align-items: center;">
         <div class="col-1 d-none d-lg-block">
-          <button class="btn" style="transform: rotate(180deg);"><img
-              src="images/icons/FLECHA1.svg" alt=""></button>
+          <button class="btn" style="transform: rotate(180deg);"><img src="images/icons/FLECHA1.svg" alt=""></button>
         </div>
         <div class="col-lg-6 col-12 px-lg-5 pr-5">
 
@@ -310,22 +323,6 @@
     </div>
   </section>
 
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <!-- Contenedor del carrusel -->
-        <div class="carousel-container" id="carouselContainer">
-          <!-- Elementos del carrusel -->
-          <div class="carousel-item carousel_active">Texto 1</div>
-          <div class="carousel-item">Texto 2</div>
-          <div class="carousel-item">Texto 3</div>
-          <div class="carousel-item">Texto 4</div>
-          <div class="carousel-item">Texto 5</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
 
   <section style="background-color: #5e5b52">
     <div class="container py-2">
@@ -449,8 +446,8 @@
 
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
               <div class="contenedor">
-                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
-                    class="img-fluid zoom" src="images/SHOP3.png" alt=""></button>
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img class="img-fluid zoom"
+                    src="images/SHOP3.png" alt=""></button>
               </div>
               <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
               <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
@@ -461,7 +458,8 @@
               <div class="contenedor">
                 <button class="btn p-0" data-toggle="modal" data-target="#myModal">
                   <img class="img-fluid zoom" src="images/SHOP2.png" alt="">
-                  <div style="font-weight: 500; color: white; position: absolute; top: 0; width: 50px; height: 25px; border-radius: 15% 0% 15% 0%; background-color: #e3777e; display: flex; justify-content: center; align-items: center;">
+                  <div
+                    style="font-weight: 500; color: white; position: absolute; top: 0; width: 50px; height: 25px; border-radius: 15% 0% 15% 0%; background-color: #e3777e; display: flex; justify-content: center; align-items: center;">
                     -50%</div>
                 </button>
               </div>
@@ -472,8 +470,8 @@
 
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
               <div class="contenedor">
-                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
-                    class="img-fluid zoom" src="images/SHOP1.png" alt=""></button>
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img class="img-fluid zoom"
+                    src="images/SHOP1.png" alt=""></button>
               </div>
               <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
               <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
@@ -482,8 +480,8 @@
 
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
               <div class="contenedor">
-                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
-                    class="img-fluid zoom" src="images/SHOP8.png" alt=""></button>
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img class="img-fluid zoom"
+                    src="images/SHOP8.png" alt=""></button>
               </div>
               <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
               <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
@@ -492,8 +490,8 @@
 
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
               <div class="contenedor">
-                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
-                    class="img-fluid zoom" src="images/SHOP9.png" alt=""></button>
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img class="img-fluid zoom"
+                    src="images/SHOP9.png" alt=""></button>
               </div>
               <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
               <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
@@ -502,8 +500,8 @@
 
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
               <div class="contenedor">
-                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
-                    class="img-fluid zoom" src="images/SHOP10.png" alt=""></button>
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img class="img-fluid zoom"
+                    src="images/SHOP10.png" alt=""></button>
               </div>
               <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
               <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
@@ -512,8 +510,8 @@
 
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
               <div class="contenedor">
-                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
-                    class="img-fluid zoom" src="images/SHOP11.png" alt=""></button>
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img class="img-fluid zoom"
+                    src="images/SHOP11.png" alt=""></button>
               </div>
               <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
               <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
@@ -522,8 +520,8 @@
 
             <div class="col-lg-3 col-md-6 col-12 text-center pb-4 px-lg-3 px-5 item-producto">
               <div class="contenedor">
-                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img
-                    class="img-fluid zoom" src="images/SHOP12.png" alt=""></button>
+                <button class="btn p-0" data-toggle="modal" data-target="#myModal"><img class="img-fluid zoom"
+                    src="images/SHOP12.png" alt=""></button>
               </div>
               <h6 class="pt-3">Nombre del producto(ALIAS)</h6>
               <p class="py-1">Lorem ipsum dolor sit amet, consectetur adipisc</p>
@@ -662,16 +660,16 @@
             </div>
           </div>
           <div class="row py-3 redes_inco" style="justify-content: center">
-            <button type="submit" class="btn mx-lg-3 mx-1"><i
-                class="fa-brands fa-facebook-f" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1"><i
-                class="fa-brands fa-whatsapp" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1"><i
-                class="fa-brands fa-instagram" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1"><i
-                class="fa-brands fa-twitter" style="color: #F4F0DD;"></i></button>
-            <button type="submit" class="btn mx-lg-3 mx-1"><i
-                class="fa-brands fa-youtube" style="color: #F4F0DD;"></i></button>
+            <button type="submit" class="btn mx-lg-3 mx-1"><i class="fa-brands fa-facebook-f"
+                style="color: #F4F0DD;"></i></button>
+            <button type="submit" class="btn mx-lg-3 mx-1"><i class="fa-brands fa-whatsapp"
+                style="color: #F4F0DD;"></i></button>
+            <button type="submit" class="btn mx-lg-3 mx-1"><i class="fa-brands fa-instagram"
+                style="color: #F4F0DD;"></i></button>
+            <button type="submit" class="btn mx-lg-3 mx-1"><i class="fa-brands fa-twitter"
+                style="color: #F4F0DD;"></i></button>
+            <button type="submit" class="btn mx-lg-3 mx-1"><i class="fa-brands fa-youtube"
+                style="color: #F4F0DD;"></i></button>
           </div>
         </div>
       </div>
@@ -682,20 +680,20 @@
         <div class="col-lg-4 col-12 px-0">2024 © Copyright Cody Apps. <br class="d-none d-lg-block">
           Todos los derechos reservados.</div>
         <div class="col-lg-4 col-12">Desarollado por <span class="color_verde">CodyExpert</span></div>
-        <div class="col-lg-4 col-12 px-0 color_verde">Términos y condiciones <span
-            style="color: #a7a5a0;">|</span> Aviso de privacidad</div>
+        <div class="col-lg-4 col-12 px-0 color_verde">Términos y condiciones <span style="color: #a7a5a0;">|</span>
+          Aviso de privacidad</div>
       </div>
     </div>
   </footer>
 
   <!-- Bootstrap JS y jQuery (para el carrusel) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script>
-  
-</script>
+  <script>
+
+  </script>
 
 
   <!-- <div class="hero"></div> -->
@@ -708,12 +706,58 @@
   <script>
     // Función para abrir el modal
     function abrirModal() {
-        $('#myModalnav2').modal('show'); // Abre el modal myModalnav2
+      $('#myModalnav2').modal('show'); // Abre el modal myModalnav2
     }
     function abrirModal1() {
-        $('#myModalnav3').modal('show'); // Abre el modal myModalnav2
+      $('#myModalnav3').modal('show'); // Abre el modal myModalnav2
     }
-</script>
+
+    // solo al hacer onclick
+    // var index = 0;
+    // var textElements = document.querySelectorAll('.texto');
+
+    // function toggleText() {
+    //   setTimeout(function () {
+    //     textElements[index].classList.add('fade-on');
+
+    //     setTimeout(function () {
+    //       textElements[index].style.display = 'none';
+
+    //       index = (index + 1) % textElements.length;
+    //       textElements[index].style.display = 'block';
+
+    //       textElements[index].classList.add('fade-in');
+
+    //       textElements[index].classList.remove('fade-on');
+    //     }, 500);
+    //   },);
+    // }
+
+    // al hacer click y cada 15segundos
+
+    var index = 0;
+    var textElements = document.querySelectorAll('.texto');
+
+    function toggleText() {
+      textElements[index].classList.add('fade-on');
+
+      setTimeout(function () {
+        textElements[index].style.display = 'none';
+
+        index = (index + 1) % textElements.length;
+        textElements[index].style.display = 'block';
+
+        textElements[index].classList.add('fade-in');
+
+        textElements[index].classList.remove('fade-on');
+      }, 500);
+    }
+
+    toggleText();
+
+    setInterval(toggleText, 15000);
+
+  </script>
 </body>
 
 </html>
