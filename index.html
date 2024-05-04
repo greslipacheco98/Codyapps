@@ -21,6 +21,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
+
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-2.css">
@@ -51,18 +52,6 @@
   </div>
 
   <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
-
-    <!-- en desarrollo -->
-    <!-- <div class="container-fluid">
-      <div class="container">
-        <p class="text-frist">
-          Descuentos de hasta el 60% del 02 al 15 de Marzo</p>
-        <p class="text-frist" style="display: none;">
-          Descuentos de hasta el 60% del 02 al 15 de Marzo2</p>
-        <p class="text-frist" style="display: none;">
-          Descuentos de hasta el 60% del 02 al 15 de Marzo3</p>
-      </div>
-    </div> -->
 
     <div class="container-fluid" style="padding: 20px;" style="cursor: pointer;">
       <div class="container">
@@ -133,191 +122,271 @@
 
   </header>
 
-  <!-- The Modal inicio de seccion  -->
-  <div class="modal fade" id="myModalnav">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+  <div class="modales">
 
-        <!-- Modal Header -->
-        <div class="modal-header" style="justify-content: flex-start;">
-          <!-- <h4 class="modal-title">Modal Heading</h4> -->
-          <button type="button" class="close" data-dismiss="modal"><span class="h6"><i
-                class="fa-solid fa-angle-left"></i> Atras</span></button>
-        </div>
+    <!-- The Modal inicio de seccion  -->
+    <div class="modal fade" id="myModalnav">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
 
-        <!-- Modal body -->
-        <div class="modal-body">
-          <div class="row" style="justify-content:center;">
-            <div class="col-7 text-center">
-              <img src="images/logo.png" class="img-fluid p-2" alt="">
-              <h5 class="text-center">Iniciar Seción</h5>
-            </div>
+          <!-- Modal Header -->
+          <div class="modal-header" style="justify-content: flex-start;">
+            <!-- <h4 class="modal-title">Modal Heading</h4> -->
+            <button type="button" class="close" data-dismiss="modal"><span class="h6"><i
+                  class="fa-solid fa-angle-left"></i> Atras</span></button>
           </div>
 
-          <form class="p-4" id="Formulario2">
-            <div class="form-group col-12">
-              <label for="" class="text-left color_gris">Nombre*</label>
-              <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
-            </div>
-            <div class="form-group col-md-12 ">
-              <label for="" class="color_gris">Asunto*</label>
-              <input type="text" class="form-control" id="" placeholder="Escribe un asunto">
-            </div>
-            <div class="form-group col-md-12 ">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label color_gris" for="gridCheck">
-                  Check me out
-                </label>
-              </div>
-            </div>
+          <!-- Modal body -->
+          <div class="modal-body">
             <div class="row" style="justify-content:center;">
-              <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia
-                sesión</button>
-              <div class="col-12 text-center">
-                <a href="#" onclick="abrirModal()" class="color_verde">He olvidado mi contraseña</a> <br>
-                <a href="#" onclick="abrirModal1()">¿No tienes cuenta? <span class="color_verde">Regístrate</span></a>
+              <div class="col-7 text-center">
+                <img src="images/logo.png" class="img-fluid p-2" alt="">
+                <h6 class="text-center pt-2">Iniciar Seción</h6>
               </div>
             </div>
-          </form>
+
+            <form class="p-4 Formulario3">
+              <div class="form-group col-12">
+                <label for="" class="text-left">Email*</label>
+                <input type="text" class="form-control" id="" placeholder="Escribe tu email">
+              </div>
+              <div class="form-group col-md-12 ">
+                <label for="" class="">Contraseña*</label>
+                <input type="password" class="form-control" id="" placeholder="Escribe un contraseña">
+              </div>
+              <div class="form-group col-md-12 ">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label color_gris" for="gridCheck" style="font-size: .9rem;">
+                    Mantener mi sesión iniciada
+                  </label>
+                </div>
+              </div>
+              <div class="row" style="justify-content:center;">
+                <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia
+                  sesión</button>
+                <div class="col-12 text-center">
+                  <a href="#" onclick="abrirModal()"><span class="color_verde">He olvidado mi contraseña</span> </a> <br>
+                  <a href="#" onclick="abrirModal1()">¿No tienes cuenta? <span class="color_verde">Regístrate</span></a>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- modal para olvide la contraseña -->
-  <div class="modal" id="myModalnav2" style="padding-right: 15px;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+    <!-- modal para olvide la contraseña -->
+    <div class="modal" id="myModalnav2" style="padding-right: 15px;">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
 
-        <!-- Modal Header -->
-        <div class="modal-header" style="justify-content: flex-start;">
-          <!-- <h4 class="modal-title">Modal Heading</h4> -->
-          <button type="button" class="close" data-dismiss="modal"><span class="h6"><i
-                class="fa-solid fa-angle-left"></i> Atras</span></button>
-        </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-          <div class="row" style="justify-content:center;">
-            <div class="col-7 text-center">
-              <img src="images/logo.png" class="img-fluid p-2" alt="">
-              <h5 class="text-center">Iniciar Seción</h5>
-            </div>
+          <!-- Modal Header -->
+          <div class="modal-header" style="justify-content: flex-start;">
+            <!-- <h4 class="modal-title">Modal Heading</h4> -->
+            <button type="button" class="close" data-dismiss="modal"><span class="h6"><i
+                  class="fa-solid fa-angle-left"></i> Atras</span></button>
           </div>
-          <!--formularios  -->
-          <form class="p-4">
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row" style="justify-content:center;">
+              <div class="col-7 text-center">
+                <img src="images/logo.png" class="img-fluid p-2" alt="">
+                <h6 class="text-center pt-2">Reestablece tu contraseña</h6>
+              </div>
+            </div>
+            <!--formularios  -->
+            <form class="p-4">
 
 
-            <p>Introduce el email con el que te registraste previamente. Enviaremos un enlace al correo para que puedas
-              recuperar tu cuenta.</p>
+              <p class="text-center" style="font-size: .9rem; font-weight: 450;">Introduce 
+                <span style="color: black;">el email con el que te registraste previamente</span>. 
+                Enviaremos un enlace al correo para que puedas recuperar tu cuenta.
+              </p>
 
-            <div class="form-row">
+              <div class="form-row">
+                <div class="form-group col-12">
+                  <label for="" class="text-left color_gris">Email*</label>
+                  <input type="text" class="form-control" id="" placeholder="Escribe tu email">
+                </div>
+              </div>
+
+
+              <div class="row" style="justify-content:center;">
+                <button type="submit" class="btn px-5 my-2 botton_naranja">Recuperar contraseña</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal para crear perfil -->
+    <div class="modal" id="myModalnav3" style="padding-right: 15px;">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header" style="justify-content: flex-start;">
+            <!-- <h4 class="modal-title">Modal Heading</h4> -->
+            <button type="button" class="close" data-dismiss="modal"><span class="h6"><i
+                  class="fa-solid fa-angle-left"></i> Atras</span></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="row" style="justify-content:center;">
+              <div class="col-7 text-center">
+                <img src="images/logo.png" class="img-fluid p-2" alt="">
+                <h6 class="text-center pt-2">Crea una cuenta</h6>
+              </div>
+            </div>
+            <form class="px-4 mt-4 form-wrapper Formulario3">
+
+              <!-- FORMULARIO LARGO -->
+              <!-- <div class="modal-dialog modal-dialog-scrollable"> -->
               <div class="form-group col-12">
-                <label for="" class="text-left color_gris">Nombre*</label>
+                <label for="" class="text-left ">Nombre*</label>
                 <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
               </div>
-            </div>
+              <div class="form-group col-md-12 ">
+                <label for="" class="color_gris">email</label>
+                <input type="text" class="form-control" id="" placeholder="Escribe un email">
+              </div>
+              <div class="form-group col-md-12 ">
+                <label for="" class="color_gris">contraseña</label>
+                <input type="text" class="form-control" id="" placeholder="Escribe un email">
+              </div>
+              <div class="form-group col-md-12 ">
+                <label for="" class="color_gris">fecha de nacimiento</label>
+                <input type="text" class="form-control" id="" placeholder="Escribe un email">
+              </div>
+              <div class="form-group col-md-12 ">
+                <label for="" class="color_gris">genero</label>
+                <input type="text" class="form-control" id="" placeholder="Escribe un email">
+              </div>
+              <div class="form-group col-md-12 ">
+                <label for="" class="color_gris">telefono</label>
+                <input type="text" class="form-control" id="" placeholder="Escribe un email">
+              </div>
 
+              <div class="row" style="justify-content:center;">
+                <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia
+                  sesión</button>
+                <a href="#" class="" data-dismiss="modal">¿ya tienes cuenta? <span class="color_verde">Inicia sesión</span></a>
 
-            <div class="row" style="justify-content:center;">
-              <button type="submit" class="btn px-5 my-2 botton_naranja">Recuperar contraseña</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+              </div>
+              <!-- </div> -->
 
-  <!-- modal para crear perfil -->
-  <div class="modal" id="myModalnav3">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-
-        <!-- Modal Header -->
-        <div class="modal-header" style="justify-content: flex-start;">
-          <!-- <h4 class="modal-title">Modal Heading</h4> -->
-          <button type="button" class="close" data-dismiss="modal"><span class="h6"><i
-                class="fa-solid fa-angle-left"></i> Atras</span></button>
-        </div>
-
-        <!-- Modal body -->
-        <div class="modal-body">
-          <div class="row" style="justify-content:center;">
-            <div class="col-7 text-center">
-              <img src="images/logo.png" class="img-fluid p-2" alt="">
-              <h5 class="text-center">Crea una cuenta</h5>
-            </div>
+            </form>
           </div>
-          <form class="px-4 mt-4 form-wrapper">
-
-            <!-- FORMULARIO LARGO -->
-            <!-- <div class="modal-dialog modal-dialog-scrollable"> -->
-            <div class="form-group col-12">
-              <label for="" class="text-left ">Nombre*</label>
-              <input type="text" class="form-control" id="" placeholder="Escribe tu nombre">
-            </div>
-            <div class="form-group col-md-12 ">
-              <label for="" class="color_gris">email</label>
-              <input type="text" class="form-control" id="" placeholder="Escribe un email">
-            </div>
-            <div class="form-group col-md-12 ">
-              <label for="" class="color_gris">contraseña</label>
-              <input type="text" class="form-control" id="" placeholder="Escribe un email">
-            </div>
-            <div class="form-group col-md-12 ">
-              <label for="" class="color_gris">fecha de nacimiento</label>
-              <input type="text" class="form-control" id="" placeholder="Escribe un email">
-            </div>
-            <div class="form-group col-md-12 ">
-              <label for="" class="color_gris">genero</label>
-              <input type="text" class="form-control" id="" placeholder="Escribe un email">
-            </div>
-            <div class="form-group col-md-12 ">
-              <label for="" class="color_gris">telefono</label>
-              <input type="text" class="form-control" id="" placeholder="Escribe un email">
-            </div>
-
-            <div class="row" style="justify-content:center;">
-              <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia
-                sesión</button>
-            </div>
-            <!-- </div> -->
-
-          </form>
         </div>
       </div>
     </div>
-  </div>
 
-  <section class="fondo_1" style="background-image: url(images/frame-127.svg);">
+  </div>
+  <style>
+    
+  </style>
+
+  <section class="fondo_1">
     <div class="container pantalla_movil">
-      <div class="row" style="align-items: center;">
+      <div class="row p-2 fondo_2">
+
         <div class="col-1 d-none d-lg-block">
-          <button class="btn" style="transform: rotate(180deg);"><img src="images/icons/FLECHA1.svg" alt=""></button>
+          <button class="btn" style="transform: rotate(180deg);" onclick="toggleportada(false)">
+            <img src="images/icons/FLECHA1.svg" alt="">
+          </button>
         </div>
+        
         <div class="col-lg-6 col-12 px-lg-5 pr-5">
 
-          <div class="divider"></div>
-          <p class="h4 cycles_text">BIENVENIDO</p>
+          <div class="partada_contenedor">
+            <div class="divider"></div>
+            <p class="h4 cycles_text">BIENVENIDO</p>
 
-          <h1 class="py-3 font_jakarta titulo_productos">Planifica y optimiza
-            <span>tu hogar</span> con nosotros.
-          </h1>
-          <h6 class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</h6>
-          <button type="button" class="btn btn_naranja">Regístrarse</button>
+            <h1 class="py-3 font_jakarta titulo_productos">Planifica y optimiza
+              <span>tu hogar</span> con nosotros.
+            </h1>
+            <h6 class="pb-3">Bienvenido al portal de Nombre de empresa, nosotros te apoyamos a dejar tu hogar como ningún otro, contáctanos y agenda tu cita.</h6>
+          </div>
+
+          <div class="partada_contenedor" style="display: none;">
+            <div class="divider"></div>
+            <p class="h4 cycles_text">LOS MEJORES MUEBLES</p>
+
+            <h1 class="py-3 font_jakarta titulo_productos">Contamos con
+              <span>los mejores materiales.</span>
+            </h1>
+            <h6 class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</h6>
+          </div>
+
+          <div class="partada_contenedor" style="display: none;">
+            <div class="divider"></div>
+            <p class="h4 cycles_text">TUS DESCUENTOS</p>
+
+            <h1 class="py-3 font_jakarta titulo_productos">Descubre
+              <span>nuevos descuentos</span> cada día.
+            </h1>
+            <h6 class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</h6>
+          </div>
+
+          <div class="partada_contenedor" style="display: none;">
+            <div class="divider"></div>
+            <p class="h4 cycles_text">EL MEJOR EQUIPO</p>
+
+            <h1 class="py-3 font_jakarta titulo_productos">Especializados
+              <span>en embellecer</span> su hogar.
+            </h1>
+            <h6 class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</h6>
+          </div>
+
+          <div class="partada_contenedor" style="display: none;">
+            <div class="divider"></div>
+            <p class="h4 cycles_text">TÚ TARJETA</p>
+
+            <h1 class="py-3 font_jakarta titulo_productos">Acumula puntos con 
+              <span>cada compra.</span>
+            </h1>
+            <h6 class="pb-3">Bienvenido al portal de Nombre de empresa, nosotros te apoyamos a dejar tu hogar como ningún otro, contáctanos y agenda tu cita.</h6>
+          </div>
+
+          <div class="partada_contenedor" style="display: none;">
+            <div class="divider"></div>
+            <p class="h4 cycles_text">TÚ AGENDA</p>
+
+            <h1 class="py-3 font_jakarta titulo_productos">Agenda tu cita y
+              <span>nosotros te apoyamos</span>.
+            </h1>
+            <h6 class="pb-3">Bienvenido al portal de Nombre de empresa, nosotros te apoyamos a dejar tu hogar como ningún otro, contáctanos y agenda tu cita.</h6>
+          </div>
+          
+          <button type="button" class="btn btn_naranja">Registrarte</button>
         </div>
+
         <div class="col-lg-4 col-12 py-lg-0 py-4">
           <div class="borde_inicio">
-            <img class="img-fluid pb-2" src="images/SLIDE1.png" alt="">
+
+            <img class="img-fluid pb-2 imagen-portada" src="images/SLIDE1.png" alt="">
+            <img class="img-fluid pb-2 imagen-portada" style="display: none;" src="images/SLIDE2.png" alt="">
+            <img class="img-fluid pb-2 imagen-portada" style="display: none;" src="images/SLIDE3.png" alt="">
+            <img class="img-fluid pb-2 imagen-portada" style="display: none;" src="images/SLIDE4.png" alt="">
+            <img class="img-fluid pb-2 imagen-portada" style="display: none;" src="images/SLIDE5.png" alt="">
+            <img class="img-fluid pb-2 imagen-portada" style="display: none;" src="images/SLIDE6.png" alt="">
+
             <div class="p-4">
               <p class="text-center">Registrate o inicia sesión para ver tus puntos y beneficios.</p>
             </div>
           </div>
         </div>
-        <div class="col-1 d-none d-lg-block"><button class="btn"><img src="images/icons/FLECHA1.svg" alt=""></button>
+        <div class="col-1 d-none d-lg-block"><button class="btn" onclick="toggleportada()"><img src="images/icons/FLECHA1.svg" alt=""></button>
         </div>
       </div>
     </div>
@@ -423,23 +492,23 @@
         <div class="col-12">
 
           <hr class="hr_1">
-          <h1 class="text-center py-3 font_jakarta titulo_productos">Nuestros
+          <h1 class="text-center py-3 font_jakarta titulo_productos" style="font-weight: 500;">Nuestros
             productos</h1>
-          <h5 class="text-center" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit,
-            sed do eiusmod tempor</h5>
+          <h6 class="text-center" style="color: #92908a;">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit,
+            sed do eiusmod tempor</h6>
 
           <div class="box py-3">
             <div class="container-1">
               <span class="icon"><i class="fa fa-search"></i></span>
-              <input type="search" id="search" placeholder="Search..." />
+              <input type="search" id="search" placeholder="¿Qué estas buscando?" />
             </div>
           </div>
           <div class="row py-5 text-center">
             <div class="col">
               <button type="button" class="btn btn_naranja">Todo</button>
-              <button type="button" class="btn">Muebles</button>
-              <button type="button" class="btn">Sillones</button>
-              <button type="button" class="btn">Repisas</button>
+              <button type="button" class="btn btn_produc">Muebles</button>
+              <button type="button" class="btn btn_produc">Sillones</button>
+              <button type="button" class="btn btn_produc">Repisas</button>
             </div>
           </div>
           <div class="row text-center">
@@ -686,10 +755,10 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS y jQuery (para el carrusel) -->
+  <!-- Bootstrap JS y jQuery (para el carrusel)
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
   <script>
 
@@ -711,29 +780,9 @@
     function abrirModal1() {
       $('#myModalnav3').modal('show'); // Abre el modal myModalnav2
     }
-
-    // solo al hacer onclick
-    // var index = 0;
-    // var textElements = document.querySelectorAll('.texto');
-
-    // function toggleText() {
-    //   setTimeout(function () {
-    //     textElements[index].classList.add('fade-on');
-
-    //     setTimeout(function () {
-    //       textElements[index].style.display = 'none';
-
-    //       index = (index + 1) % textElements.length;
-    //       textElements[index].style.display = 'block';
-
-    //       textElements[index].classList.add('fade-in');
-
-    //       textElements[index].classList.remove('fade-on');
-    //     }, 500);
-    //   },);
+    // function abrirModal2() {
+    //   $('#myModalnav').modal('show'); 
     // }
-
-    // al hacer click y cada 15segundos
 
     var index = 0;
     var textElements = document.querySelectorAll('.texto');
@@ -756,6 +805,37 @@
     toggleText();
 
     setInterval(toggleText, 15000);
+
+    // portada 
+
+    // imagen-portada
+  var index1 = 0;
+  var ContenedorElements = document.querySelectorAll('.partada_contenedor');
+  var imageElements = document.querySelectorAll('.imagen-portada');
+
+  function toggleportada(forward = true) {
+    ContenedorElements[index1].style.display = 'none';
+    imageElements[index1].style.display = 'none';
+
+    index1 = (index1 + (forward ? 1 : -1) + ContenedorElements.length) % ContenedorElements.length;
+
+    ContenedorElements[index1].style.display = 'block';
+    imageElements[index1].style.display = 'block';
+
+    ContenedorElements[index1].classList.add('fade-in');
+    imageElements[index1].classList.add('fade-in');
+
+    setTimeout(function () {
+      ContenedorElements[index1].classList.remove('fade-on');
+      ContenedorElements[index1].classList.remove('fade-in');
+      imageElements[index1].classList.remove('fade-on');
+      imageElements[index1].classList.remove('fade-in');
+    }, 500);
+  }
+
+
+  toggleportada();
+  setInterval(toggleportada, 15000);
 
   </script>
 </body>
