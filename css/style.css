@@ -5,6 +5,9 @@
 .p, .btn_verde, .font_jakarta {
   font-family: 46px 'Plus Jakarta Sans';
 }
+h1,h2,h3,h4,h5,h6 {
+  font-family:'Plus Jakarta Sans';
+} 
 
 body:before {
   content: "";
@@ -233,7 +236,7 @@ a:hover {
   padding-top: 0px;
   background: #fff;
   /* height: calc(90%); */
-  height: calc(60vh - 52px);
+  height: calc(60vh);
   -webkit-transform: translateY(-110%);
   -ms-transform: translateY(-110%);
   transform: translateY(-110%);

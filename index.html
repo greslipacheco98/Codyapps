@@ -55,13 +55,9 @@
 
     <div class="container-fluid" style="padding: 20px;" style="cursor: pointer;">
       <div class="container">
-        <p class="text-frist texto fade-in" onclick="toggleText()">Descuentos de hasta el 60% del 02 al 15 de Marzo</p>
-        <p class="text-frist texto" style="display: none;" onclick="toggleText()">Descuentos de hasta el 60% del 02 al
-          15 de
-          Marzo2</p>
-        <p class="text-frist texto" style="display: none;" onclick="toggleText()">Descuentos de hasta el 60% del 02 al
-          15 de
-          Marzo3</p>
+        <p class="text-frist texto fade-in" onclick="toggleText()">El 21 de Marzo del 2024 la tienda no abrirá</p>
+        <p class="text-frist texto" style="display: none;" onclick="toggleText()">Descuentos de hasta el 60% del 02 al 15 de Marzo</p>
+        <p class="text-frist texto" style="display: none;" onclick="toggleText()">¡Solo quedán 3 unidades de “Mueble de madera”!</p>
       </div>
     </div>
 
@@ -74,9 +70,9 @@
               <img src="images/logo.png" class="img-fluid" alt="">
             </div>
             <div class="col-lg-7 d-none d-xl-block px-0">
-              <a href="#home-section" class="nav-link">Nosotros</a>
-              <a href="#home-section" class="nav-link">Productos</a>
-              <a href="#home-section" class="nav-link">Contacto</a>
+              <a href="#one-section" class="nav-link">Nosotros</a>
+              <a href="#second-section" class="nav-link">Productos</a>
+              <a href="#thri-section" class="nav-link">Contacto</a>
             </div>
           </div>
         </div>
@@ -89,14 +85,14 @@
 
               <div class="d-block d-lg-none py-3">
 
-                <li><a href="#home-section" class="nav-link py-3">Home</a></li>
-                <li><a href="#about-section" class="nav-link py-3">About Us</a></li>
-                <li><a href="#blog-section" class="nav-link py-3">Blog</a></li>
+                <li><a href="#one-section" class="nav-link py-3">Nosotros</a></li>
+                <li><a href="#second-section" class="nav-link py-3">Productos</a></li> 
+                <li><a href="#thri-section" class="nav-link py-3">Contacto</a></li>
 
-                <button class="btn btn-succeful m-3" id="botton-inicio">Iniciar
-                  sesión</button>
+                <button class="btn btn-succeful m-3 bottones-movil js-menu-toggle" id="botton-inicio" data-toggle="modal"
+                data-target="#myModalnav" id="botton-inicio">Iniciar sesión</button>
                 <br>
-                <button type="button" class="btn btn_verde m-3">Regístrarse</button>
+                <button type="button js-menu-toggle" onclick="abrirModal1()" class="btn btn_verde m-3" style="width: 90%;">Regístrarse</button>
 
               </div>
 
@@ -177,7 +173,7 @@
     </div>
 
     <!-- modal para olvide la contraseña -->
-    <div class="modal" id="myModalnav2" style="padding-right: 15px;">
+    <div class="modal" id="myModalnav2"   >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -223,7 +219,7 @@
     </div>
 
     <!-- modal para crear perfil -->
-    <div class="modal" id="myModalnav3" style="padding-right: 15px;">
+    <div class="modal" id="myModalnav3"   >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -449,12 +445,12 @@
   </section>
 
 
-  <section>
+  <section  id="one-section">
     <div class="container py-lg-5 pt-3">
       <div class="row pt-5" style="align-items: center;">
         <div class="col-lg-5 col-12 pr-lg-5 text-center"><img class="img-fluid" width="95%"
             src="images/QuienesSomos.png" alt=""></div>
-        <div class="col-lg-7 col-12 pt-5 py-lg-5">
+        <div class="col-lg-7 col-12 pt-5 py-lg-5 titulo1">
 
           <div class="divider"></div>
           <p class="h5 cycles_text">¿QUIENES SOMOS?
@@ -486,7 +482,7 @@
     </div>
   </section>
 
-  <section class="pb-5">
+  <section class="pb-5"  id="two-section">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -505,10 +501,10 @@
           </div>
           <div class="row py-5 text-center">
             <div class="col">
-              <button type="button" class="btn btn_naranja">Todo</button>
-              <button type="button" class="btn btn_produc">Muebles</button>
-              <button type="button" class="btn btn_produc">Sillones</button>
-              <button type="button" class="btn btn_produc">Repisas</button>
+              <button type="button" class="btn ibtn btn_naranja" onclick="cambiarClase(this)">Todo</button>
+              <button type="button" class="btn ibtn btn_produc" onclick="cambiarClase(this)">Muebles</button>
+              <button type="button" class="btn ibtn btn_produc" onclick="cambiarClase(this)">Sillones</button>
+              <button type="button" class="btn ibtn btn_produc" onclick="cambiarClase(this)">Repisas</button>
             </div>
           </div>
           <div class="row text-center">
@@ -676,14 +672,14 @@
 
   </section>
 
-  <footer style="background-color: #f4f0dd;">
+  <footer style="background-color: #f4f0dd;"  id="thri-section">
     <div class="container mb-5">
       <div class="row pt-5">
         <div class="col-lg-6 col-12 px-3 py-3 py-lg-1">
 
           <p class="h6 cycles_text">CONTACTANOS</p>
           <h1 class="py-3 font_jakarta titulo_productos">Comienza ahora</h1>
-          <form class="formulario2">
+          <form class="formulario2" id="formulario">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="">Nombre*</label>
@@ -705,9 +701,14 @@
               <textarea name="" class="form-control" id="" cols="30" rows="7"
                 placeholder="Escribe un mensaje"></textarea>
             </div>
-            <button type="submit" class="btn px-5 botton_naranja">Enviar
+            <button type="submit" id="liveToastBtn" class="btn px-5 botton_naranja">Enviar
               mensaje</button>
           </form>
+          <!-- Anuncio emergente -->
+          <div id="popupAd" class="popup">
+            <!-- <span class="closeBtn" onclick="closePopup()">&times;</span> -->
+            <p>Mensaje enviado correctamente</p>
+          </div>
 
         </div>
         <div class="col-lg-6 col-12 px-3 py-3 py-lg-1">
@@ -746,10 +747,10 @@
 
     <div class="container">
       <div class="row py-3 mx-1 text-footer">
-        <div class="col-lg-4 col-12 px-0">2024 © Copyright Cody Apps. <br class="d-none d-lg-block">
+        <div class="col-lg-4 col-12 px-0" style="position: static;">2024 © Copyright Cody Apps. <br class="d-none d-lg-block">
           Todos los derechos reservados.</div>
-        <div class="col-lg-4 col-12">Desarollado por <span class="color_verde">CodyExpert</span></div>
-        <div class="col-lg-4 col-12 px-0 color_verde">Términos y condiciones <span style="color: #a7a5a0;">|</span>
+        <div class="col-lg-4 col-12" style="position: static;">Desarollado por <span class="color_verde">CodyExpert</span></div>
+        <div class="col-lg-4 col-12 px-0 color_verde" style="position: static;">Términos y condiciones <span style="color: #a7a5a0;">|</span>
           Aviso de privacidad</div>
       </div>
     </div>
@@ -807,8 +808,6 @@
     setInterval(toggleText, 15000);
 
     // portada 
-
-    // imagen-portada
   var index1 = 0;
   var ContenedorElements = document.querySelectorAll('.partada_contenedor');
   var imageElements = document.querySelectorAll('.imagen-portada');
@@ -833,9 +832,41 @@
     }, 500);
   }
 
-
   toggleportada();
   setInterval(toggleportada, 15000);
+
+  function cambiarClase(elemento) {
+    var botones = document.querySelectorAll('.ibtn');
+    botones.forEach(function(btn) {
+      btn.classList.add('btn_produc');
+      btn.classList.remove('btn_naranja');
+    });
+
+    elemento.classList.remove('btn_produc');
+    elemento.classList.add('btn_naranja');
+
+  }
+
+
+  // funcion para el pop
+  function showPopup() {
+      var popup = document.getElementById("popupAd");
+      popup.style.display = "block";
+      setTimeout(function() {
+        popup.style.display = "none";
+      }, 5000);
+    }
+    // function closePopup() {
+    //   var popup = document.getElementById("popupAd");
+    //   popup.style.display = "none";
+    // }
+    $(document).ready(function() {
+      $('#formulario').submit(function(event) {
+        event.preventDefault(); 
+
+        showPopup();
+      });
+    });
 
   </script>
 </body>

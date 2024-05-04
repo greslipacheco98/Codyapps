@@ -6,6 +6,7 @@ body{
   background-color: #fbf9f4;
   .site-mobile-menu-body{
     display: inline-block !important;
+    width: 100%;
   }
   .site-mobile-menu-header{
     .site-mobile-menu-close{
@@ -21,6 +22,10 @@ body{
     border-bottom: solid 1px #5e5b5241;
   }
 }
+.bottones-movil{
+  width: 90%;
+  border: solid 1px #897e7e;
+}
 
 .color_gris{
   color: #5E5B52;
@@ -31,7 +36,8 @@ body{
 }
 
 .botton_naranja{
-  background-color: #EA9B1C; color: white;
+  background-color: #EA9B1C; 
+  color: white;
   
 }
 .botton_naranja:hover{
@@ -398,6 +404,47 @@ h1 {
  height: 550px;
 }
 
+/* pop */
+.popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #5e5b52;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  /* box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); */
+  display: none; /* El anuncio estará oculto inicialmente */
+  animation: slideUp 0.5s ease-in-out;
+  p{
+    color: white;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* .closeBtn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
 /* hover productos */
 .zoom {
   transition: transform .6s;
@@ -540,6 +587,10 @@ input {
   }
 }
 
+#myModalnav2, #myModalnav3{
+  padding-right: 15px;
+}
+
 /* dispositivos movil */
 
 @media (min-width: 576px) {
@@ -550,6 +601,11 @@ input {
 }
 
 @media only screen and (max-width: 600px) {
+
+  #myModalnav2, #myModalnav3{
+    padding-right: 0px;
+  }
+
   .fondo_1 {
     height: auto;
   }
@@ -558,7 +614,7 @@ input {
   }
 
   .text-frist {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .site-navbar {
@@ -571,12 +627,12 @@ input {
   }
 
   .text-tarjeta div h5 {
-    font-size: .9rem;
+    font-size: 1.1rem;
     padding-right: 10px;
   }
 
   .text-tarjeta div h6 {
-    font-size: .8rem;
+    font-size: .9rem;
     padding-right: 10px;
   }
 
@@ -612,6 +668,26 @@ input {
   }
   .text-footer :nth-child(3){
     text-align: left;
+  }
+  .titulo1 h1{
+    font-size: 2rem;
+  }
+  .titulo1 h6{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .modales .modal-dialog{
+    margin: 0;
+    height: 100%;
+    .modal-content{
+      height: 100%;
+      .modal-body{
+        .form-wrapper {
+          max-height: 70%;
+          overflow-y: auto;
+      }
+      }
+    }
   }
 }
 
