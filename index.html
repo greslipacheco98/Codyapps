@@ -15,7 +15,7 @@
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">  
   <link rel="stylesheet" href="css/owl.carousel.min.css">
 
   <!-- Bootstrap CSS -->
@@ -101,7 +101,7 @@
                 <button class="btn btn-succeful" id="botton-inicio" data-toggle="modal"
                   data-target="#myModalnav">Iniciar sesión</button>
 
-                <button type="button" class="btn btn_verde">Regístrarse</button>
+                <button type="button" class="btn btn_verde" onclick="abrirModal1()">Regístrarse</button>
 
               </div>
             </ul>
@@ -159,8 +159,7 @@
                 </div>
               </div>
               <div class="row" style="justify-content:center;">
-                <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia
-                  sesión</button>
+                <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia sesión</button>
                 <div class="col-12 text-center">
                   <a href="#" onclick="abrirModal()"><span class="color_verde">He olvidado mi contraseña</span> </a> <br>
                   <a href="#" onclick="abrirModal1()">¿No tienes cuenta? <span class="color_verde">Regístrate</span></a>
@@ -173,8 +172,7 @@
     </div>
 
     <!-- modal para olvide la contraseña -->
-    <div class="modal" id="myModalnav2"   
-    >
+    <div class="modal" id="myModalnav2">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
 
@@ -270,9 +268,9 @@
               </div>
 
               <div class="row" style="justify-content:center;">
-                <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia
-                  sesión</button>
-                <a href="#" class="" data-dismiss="modal">¿ya tienes cuenta? <span class="color_verde">Inicia sesión</span></a>
+                <button type="submit" class="btn px-5 my-2 botton_naranja">Inicia sesión</button>
+                <!-- <a href="#" class="" data-dismiss="modal">¿ya tienes cuenta? <span class="color_verde">Inicia sesión</span></a> -->
+                <a href="#" class="" href="#" onclick="abrirModal3()">¿ya tienes cuenta? <span class="color_verde">Inicia sesión</span></a>
 
               </div>
               <!-- </div> -->
@@ -484,7 +482,7 @@
     </div>
   </section>
 
-  <section class="pb-5"  id="two-section">
+  <section class="pb-5 pt-5"  id="second-section">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -751,7 +749,7 @@
       <div class="row py-3 mx-1 text-footer">
         <div class="col-lg-4 col-12 px-0" style="position: static;">2024 © Copyright Cody Apps. <br class="d-none d-lg-block">
           Todos los derechos reservados.</div>
-        <div class="col-lg-4 col-12" style="position: static;">Desarollado por <span class="color_verde">CodyExpert</span></div>
+        <div class="col-lg-4 col-12" style="position: static;">Desarollado por <a href="https://codyexpert.com/site/index.html" target="_blank"><span class="color_verde">CodyExpert</span></a></div>
         <div class="col-lg-4 col-12 px-0 color_verde" style="position: static;">Términos y condiciones <span style="color: #a7a5a0;">|</span>
           Aviso de privacidad</div>
       </div>
@@ -783,6 +781,10 @@
     function abrirModal1() {
       $('#myModalnav3').modal('show'); // Abre el modal myModalnav2
     }
+    function abrirModal3() {
+      $('#myModalnav3').modal('hide');
+      $('#myModalnav').modal('show'); // Abre el modal myModalnav2
+    }
     // function abrirModal2() {
     //   $('#myModalnav').modal('show'); 
     // }
@@ -807,9 +809,9 @@
 
     toggleText();
 
-    setInterval(toggleText, 15000);
+    setInterval(toggleText, 10000);
 
-    // portada 
+  // portada 
   var index1 = 0;
   var ContenedorElements = document.querySelectorAll('.partada_contenedor');
   var imageElements = document.querySelectorAll('.imagen-portada');
