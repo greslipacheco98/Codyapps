@@ -288,6 +288,9 @@ h1 {
 .redes_inco button:hover{
   background-color: #74a157;
 }
+.redes_inco a:hover{
+  background-color: #74a157;
+}
 /* pagination hover effect on non-active */
 .pagination_section a:hover:not(.active, .pagination_text, .pagination_text2) {
   background-color: #f4f0dd;
@@ -571,12 +574,23 @@ input {
 }
 
 .redes_inco button{
-  background-color: #51892D; border-radius: 50%;
+  background-color: #51892D; 
+  border-radius: 50%;
+}
+
+.redes_inco a i{
+  color: #F4F0DD;
+}
+
+.redes_inco a{
+  background-color: #51892D; 
+  border-radius: 50%;
 }
 
 .redes_inco button i{
   color: #F4F0DD;
 }
+
 .text-footer{
   font-size: .8rem; color: #ADADAD; align-items: center; border-top: solid 2px #a79e9e45;
 }
